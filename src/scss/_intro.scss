@@ -1,0 +1,43 @@
+.section-intro {
+  padding: 40px;
+  background-color: #111;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.intro-image-wrap {
+  flex: 0 0 55%;
+}
+
+.intro-image {
+  max-width: 100%;
+}
+
+.intro-copy {
+  flex: 0 0 45%;
+  padding: 40px;
+}
+
+.intro-title {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: $font-weight-thin;
+  color: $primary;
+
+  em {
+    font-weight: $font-weight-normal;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+}
+
+.intro-description {
+  font-size: 21px;
+  line-height: 1.2;
+  color: $text-inverse;
+}

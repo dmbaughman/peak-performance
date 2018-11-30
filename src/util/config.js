@@ -10,7 +10,7 @@ export const languages = [
 ]
 
 
-export const player = {
+export const heroPlayer = {
   playlist: {
     hero: 'https://cdn.jwplayer.com/v2/playlists/ygS8GREa'
   },
@@ -22,6 +22,8 @@ export const player = {
     controls: false,
     stretching: 'fill',
     displaytitle: false,
-    displaydescription: false
+    displaydescription: false,
+    width: '100vw',
+    height: '100vh'
   }
 }

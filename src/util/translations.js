@@ -15,7 +15,7 @@ export default {
   },
   hero: {
     title: [
-      'Better Health',
+      '<span class="hero-title-top">Better</span><span class="hero-title-bottom">Health</span>',
       ''
     ],
     steps: {
@@ -39,7 +39,7 @@ export default {
   },
   intro: {
     title: [
-      'Add <em>years</em> to your life and <em>life</em> to your years.<sup>&trade;</sup>',
+      'Add <em>years</em> to your life and <em>life</em> to your years.&trade;',
       ''
     ],
     description: [

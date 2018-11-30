@@ -1,9 +1,33 @@
-$gotham-n: 'Gotham Narrow A', 'Gotham Narrow B', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; // gotham narrow display
-$gotham-n-ss: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B', Arial, sans-serif; // gotham narrow screen smart
+//
+// Project Variables
+//
 
+// Page layout
+$page-max-width: 1400px;
+
+
+// Font families
+$gotham-condensed: 'Gotham Cond A', 'Gotham Cond B', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; // gotham narrow display
+$gotham-narrow: 'Gotham Narrow A', 'Gotham Narrow B', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; // gotham narrow display
+$gotham-narrow-screensmart: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B', Arial, sans-serif; // gotham narrow screen smart
+
+// Font weights
 $font-weight-thin: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
 $font-weight-medium: 500;
+$font-weight-bold: 600;
 
-$font-family-base: $gotham-n-ss;
-$headings-font-family: $gotham-n;
-$headings-font-weight: $font-weight-thin;
+// Colors
+$primary: #f47222;
+$text-inverse: #ebebeb;
+
+
+
+//
+// Bootstrap Overrides
+//
+
+$font-family-base: $gotham-narrow-screensmart;
+$headings-font-family: $gotham-narrow;
+// $headings-font-weight: $font-weight-light;
