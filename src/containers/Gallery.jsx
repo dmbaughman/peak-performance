@@ -1,17 +1,23 @@
-import React, { Component } from 'react';
-import { withLocalize, Translate } from 'react-localize-redux';
+import React, { Component } from 'react'
+import GalleryItem from '../components/GalleryItem'
+import { gallery } from '../util/config'
 
-// import { } from '../util/config'
-
-@withLocalize
-class Footer extends Component {
+class Gallery extends Component {
   render () {
     return (
-
-      <h1>Gallery</h1>
-
+      <section className='section-gallery'>
+        <div className='gallery-groups container'>
+          {gallery.map((group, groupIndex) => (
+            <div className={`gallery-group group-${groupIndex + 1}`} key={groupIndex}>
+              {group.map((item, itemIndex) => (
+                <GalleryItem item={item} key={itemIndex} />
+              ))}
+            </div>
+          ))}
+        </div>
+      </section>
     )
   }
 }
 
-export default Footer;
+export default Gallery

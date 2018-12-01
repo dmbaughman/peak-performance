@@ -20,7 +20,11 @@ $font-weight-bold: 600;
 
 // Colors
 $primary: #f47222;
-$text-inverse: #ebebeb;
+
+$gray-darkest: #111;
+$gray-lightest: #ebebeb;
+
+$text-inverse: $gray-lightest;
 
 
 

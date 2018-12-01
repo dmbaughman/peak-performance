@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { withLocalize, Translate } from 'react-localize-redux';
+import { Translate } from 'react-localize-redux';
 import ReactJWPlayer from 'react-jw-player';
 
+import Icon from '../components/Icon'
 import { heroPlayer } from '../util/config'
 
-@withLocalize
 class Hero extends Component {
   state = {
-    steps: 4,
+    stepCount: 4,
     activeStep: 0
   }
 
@@ -18,7 +18,7 @@ class Hero extends Component {
   }
 
   render () {
-    const { steps, activeStep } = this.state;
+    const { stepCount, activeStep } = this.state;
     return (
       <section className='section-hero'>
         <ReactJWPlayer
@@ -29,7 +29,7 @@ class Hero extends Component {
           customProps={heroPlayer.config}
         />
         <ol className='hero-steps'>
-          {Array(steps).fill().map((step, index) => (
+          {Array(stepCount).fill().map((step, index) => (
             <li className={`hero-steps-item${index === activeStep ? ' active' : ''}`} onClick={() => this.handleStepClick(index)} key={index}>
               <Translate id={`hero.steps.${index + 1}`} />
             </li>
@@ -41,7 +41,7 @@ class Hero extends Component {
         <div className='hero-scroll'>
           <a className='hero-scroll-link' href='#intro'>
             <Translate id='ui.scroll' />
-            <span className='arrow'></span>
+            <Icon id='arrow' />
           </a>
         </div>
       </section>

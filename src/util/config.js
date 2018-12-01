@@ -27,3 +27,122 @@ export const heroPlayer = {
     height: '100vh'
   }
 }
+
+
+export const gallery = [
+  [
+    {
+      type: 'video',
+      size: 'medium',
+      thumbnail: 'https://placeimg.com/400/225/people',
+      videoId: ''
+    },
+    {
+      type: 'text',
+      title: 'gallery.title',
+      description: 'gallery.description'
+    }
+  ],
+  [
+    {
+      type: 'video',
+      size: 'large',
+      thumbnail: 'https://placeimg.com/800/450/people',
+      videoId: ''
+    }
+  ],
+  [
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    },
+    {
+      type: 'showMore',
+      label: 'ui.more'
+    },
+    {
+      type: 'video',
+      size: 'medium',
+      thumbnail: 'https://placeimg.com/400/225/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    }
+  ],
+  [
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'medium',
+      thumbnail: 'https://placeimg.com/400/225/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    }
+  ],
+  [
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'medium',
+      thumbnail: 'https://placeimg.com/400/225/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/people',
+      videoId: ''
+    }
+  ]
+]
