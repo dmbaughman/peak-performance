@@ -171,7 +171,7 @@ export default {
       ''
     ],
     copyright: [
-      '&copy; ${year} Melaleuca, Inc.  All Rights Reserved.',
+      '&copy; Copyright ${year} Melaleuca, Inc.  All Rights Reserved.',
       ''
     ]
   }

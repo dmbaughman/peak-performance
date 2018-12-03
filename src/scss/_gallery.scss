@@ -14,8 +14,8 @@ $grid-gap: 20px;
     'a b b'
     'a c d'
     'e e d';
-  width: 100vw;
-  height: 60vw;
+  width: 100%;
+  height: 56vw;
 }
 
 .gallery-group {
@@ -66,8 +66,8 @@ $grid-gap: 20px;
     flex-basis: 50%;
 
     .group-4 & {
-      flex-basis: auto;
-      height: 25%;
+      flex-basis: percentage((1/8) / (3/4));
+      height: 50%;
     }
   }
 
@@ -76,9 +76,14 @@ $grid-gap: 20px;
 
     .group-1 &,
     .group-4 & {
-      flex-basis: auto;
+      flex-basis: percentage((1/4) / (3/4));
       height: 100%;
     }
+  }
+
+  &.large {
+    width: 100%;
+    height: 100%;
   }
 }
 

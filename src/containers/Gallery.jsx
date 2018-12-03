@@ -6,7 +6,7 @@ class Gallery extends Component {
   render () {
     return (
       <section className='section-gallery'>
-        <div className='gallery-groups container'>
+        <div className='gallery-groups'>
           {gallery.map((group, groupIndex) => (
             <div className={`gallery-group group-${groupIndex + 1}`} key={groupIndex}>
               {group.map((item, itemIndex) => (
