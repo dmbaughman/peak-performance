@@ -8,6 +8,7 @@ import { languages } from '../util/config'
 
 import IconSprite from '../components/IconSprite'
 import Hero from './Hero'
+import Quiz from './Quiz'
 import Intro from './Intro'
 import Gallery from './Gallery'
 import Contents from './Contents'
@@ -28,6 +29,7 @@ class App extends Component {
       <main>
         <IconSprite />
         <Hero />
+        <Quiz />
         <Intro />
         <Gallery />
         <Contents />

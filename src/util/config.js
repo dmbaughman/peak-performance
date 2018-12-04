@@ -29,6 +29,14 @@ export const heroPlayer = {
   'plays-inline': 'true'
 }
 
+export const symptoms = [
+  'tired',
+  'energy',
+  'sleep',
+  'sore',
+  'inflammation'
+]
+
 
 export const gallery = [
   [

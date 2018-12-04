@@ -37,13 +37,41 @@ export default {
       ]
     }
   },
+  quiz: {
+    lead: [
+      'Is free radical damage starting to show?  You',
+      ''
+    ],
+    symptoms: {
+      tired: [
+        'feel tired',
+        ''
+      ],
+      energy: [
+        'lack energy',
+        ''
+      ],
+      sleep: [
+        'sleep poorly',
+        ''
+      ],
+      sore: [
+        'feel sore after exercise',
+        ''
+      ],
+      inflammation: [
+        'suffer from inflammation',
+        ''
+      ]
+    }
+  },
   intro: {
     title: [
-      'Add <em>years</em> to your life and <em>life</em> to your years.&trade;',
+      'Your body needs<br><em>better nutrition</em>',
       ''
     ],
     description: [
-      'The Peak Performance Nutrition Pack was shown to reduce free radicals associated with activity-induced inflammation.<sup>*</sup>',
+      '<em>Peak Performance Nutrition Pack</em> was shown to reduce free radicals associated with activity-induced inflammation.<sup>*</sup> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ''
     ]
   },

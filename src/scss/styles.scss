@@ -2,10 +2,14 @@
 @import '~bootstrap/scss/bootstrap-reboot';
 @import '~bootstrap/scss/type';
 
+// Scaffolding
 @import 'mixins';
 @import 'global';
 @import 'icons';
+
+// Sections
 @import 'hero';
+@import 'quiz';
 @import 'intro';
 @import 'gallery';
 @import 'contents';

@@ -1,6 +1,7 @@
 .section-intro {
   padding: 40px;
-  background-color: #111;
+  background-color: $gray-lightest;
+  color: $gray-darker;
 }
 
 .intro-container {
@@ -27,7 +28,6 @@
   font-size: 50px;
   line-height: 1;
   font-weight: $font-weight-thin;
-  color: $primary;
 
   em {
     font-weight: $font-weight-normal;
@@ -37,7 +37,6 @@
 }
 
 .intro-description {
-  font-size: 21px;
-  line-height: 1.2;
-  color: $text-inverse;
+  font-size: 20px;
+  line-height: 1.35;
 }
