@@ -3,6 +3,7 @@ import { Translate } from 'react-localize-redux';
 import ReactJWPlayer from 'react-jw-player';
 
 import Icon from '../components/Icon'
+import VideoPlayer from '../components/VideoPlayer'
 import { heroPlayer } from '../util/config'
 
 class Hero extends Component {
@@ -21,13 +22,7 @@ class Hero extends Component {
     const { stepCount, activeStep } = this.state;
     return (
       <section className='section-hero'>
-        <ReactJWPlayer
-          className='hero-video'
-          playerId='hero-player'
-          playlist={heroPlayer.playlist.hero}
-          playerScript={heroPlayer.script}
-          customProps={heroPlayer.config}
-        />
+        <VideoPlayer className='hero-video' {...heroPlayer} />
         <ol className='hero-steps'>
           {Array(stepCount).fill().map((step, index) => (
             <li className={`hero-steps-item${index === activeStep ? ' active' : ''}`} onClick={() => this.handleStepClick(index)} key={index}>

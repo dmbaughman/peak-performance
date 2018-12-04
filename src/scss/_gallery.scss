@@ -25,25 +25,21 @@ $grid-gap: 20px;
 
 
 .group-1 {
-  // background-color: orange;
   grid-area: b;
   align-items: flex-end;
   justify-content: flex-start;
 }
 
 .group-2 {
-  // background-color: lime;
   grid-area: c;
 }
 
 .group-3 {
-  // background-color: blue;
   grid-area: d;
   align-content: flex-start;
 }
 
 .group-4 {
-  // background-color: turquoise;
   grid-area: e;
   flex-flow: row-reverse nowrap;
   align-content: flex-start;
@@ -51,7 +47,6 @@ $grid-gap: 20px;
 }
 
 .group-5 {
-  // background-color: magenta;
   grid-area: a;
   flex-wrap: wrap-reverse;
   align-content: flex-start;

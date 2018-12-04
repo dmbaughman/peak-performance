@@ -13,11 +13,9 @@ $scroll-width: 75px;
 .hero-video {
   position: absolute;
   z-index: -1;
-
-  .jwplayer {
-    width: 100vw;
-    height: 100vh;
-  }
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
 }
 
 .hero-steps {

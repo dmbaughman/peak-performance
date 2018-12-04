@@ -11,21 +11,22 @@ export const languages = [
 
 
 export const heroPlayer = {
-  playlist: {
-    hero: 'https://cdn.jwplayer.com/v2/playlists/ygS8GREa'
-  },
-  script: 'https://content.jwplatform.com/libraries/0FZCK9ag.js',
-  config: {
-    mute: true,
-    repeat: true,
-    autostart: false,
-    controls: false,
-    stretching: 'fill',
-    displaytitle: false,
-    displaydescription: false,
-    width: '100vw',
-    height: '100vh'
-  }
+  sources: [
+    {
+      type: 'video/webm',
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.webm'
+    },
+    {
+      type: 'video/mp4',
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.mp4'
+    }
+  ],
+  poster: '',
+  muted: true,
+  loop: true,
+  autoPlay: true,
+  controls: false,
+  'plays-inline': 'true'
 }
 
 
