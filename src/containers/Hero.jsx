@@ -4,11 +4,11 @@ import ReactJWPlayer from 'react-jw-player';
 
 import Icon from '../components/Icon'
 import VideoPlayer from '../components/VideoPlayer'
-import { heroPlayer } from '../util/config'
+import { heroVideoConfig, heroSlides } from '../util/config'
 
 class Hero extends Component {
   state = {
-    stepCount: 4,
+    stepCount: heroSlides.length,
     activeStep: 0
   }
 
@@ -22,7 +22,6 @@ class Hero extends Component {
     const { stepCount, activeStep } = this.state;
     return (
       <section className='section-hero'>
-        <VideoPlayer className='hero-video' {...heroPlayer} />
         <h2 className='hero-tagline'>
           <Translate id='hero.tagline' />
         </h2>
@@ -31,9 +30,17 @@ class Hero extends Component {
             <li className={`hero-steps-item${index === activeStep ? ' active' : ''}`} onClick={() => this.handleStepClick(index)} key={index}></li>
           ))}
         </ol>
-        <h1 className='hero-title'>
-          <Translate id='hero.title' />
-        </h1>
+        {heroSlides.map((slide, index) => {
+          const videoConfig = {...heroVideoConfig, ...slide.video}
+          return (
+            <div className={`hero-slide ${index === activeStep ? 'active' : ''}`} key={slide.id}>
+              <VideoPlayer className='hero-video' {...videoConfig} />
+              <h1 className='hero-title'>
+                <Translate id={`hero.titles.${slide.id}`} />
+              </h1>
+            </div>
+          )
+        })}
         <div className='hero-scroll'>
           <a className='hero-scroll-link' href='#intro'>
             <Translate id='ui.scroll' />

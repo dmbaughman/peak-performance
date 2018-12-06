@@ -25,11 +25,59 @@ export const heroSlides = [
       sources: [
         {
           type: 'video/webm',
+          url: ''
+        },
+        {
+          type: 'video/mp4',
+          url: ''
+        }
+      ],
+      poster: '',
+    }
+  },
+  {
+    id: 'energy',
+    video: {
+      sources: [
+        {
+          type: 'video/webm',
+          url: ''
+        },
+        {
+          type: 'video/mp4',
+          url: ''
+        }
+      ],
+      poster: '',
+    }
+  },
+  {
+    id: 'health',
+    video: {
+      sources: [
+        {
+          type: 'video/webm',
           url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.webm'
         },
         {
           type: 'video/mp4',
           url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.mp4'
+        }
+      ],
+      poster: '',
+    }
+  },
+  {
+    id: 'vitality',
+    video: {
+      sources: [
+        {
+          type: 'video/webm',
+          url: ''
+        },
+        {
+          type: 'video/mp4',
+          url: ''
         }
       ],
       poster: '',
@@ -71,7 +119,7 @@ export const gallery = [
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/arch',
+      thumbnail: 'https://placeimg.com/400/225/nature',
       videoId: ''
     },
     {
@@ -84,7 +132,7 @@ export const gallery = [
     {
       type: 'video',
       size: 'large',
-      thumbnail: 'https://placeimg.com/800/450/arch',
+      thumbnail: 'https://placeimg.com/800/450/nature',
       videoId: ''
     }
   ],
@@ -92,7 +140,7 @@ export const gallery = [
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     },
     {
@@ -102,25 +150,25 @@ export const gallery = [
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/arch',
+      thumbnail: 'https://placeimg.com/400/225/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     }
   ],
@@ -128,25 +176,25 @@ export const gallery = [
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/arch',
+      thumbnail: 'https://placeimg.com/400/225/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     }
   ],
@@ -154,31 +202,31 @@ export const gallery = [
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/arch',
+      thumbnail: 'https://placeimg.com/400/225/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/arch',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     }
   ]
