@@ -9,6 +9,34 @@ export const languages = [
   }
 ]
 
+export const heroVideoConfig = {
+  poster: '',
+  muted: true,
+  loop: true,
+  autoPlay: true,
+  controls: false,
+  'plays-inline': 'true'
+}
+
+export const heroSlides = [
+  {
+    id: 'peak',
+    video: {
+      sources: [
+        {
+          type: 'video/webm',
+          url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.webm'
+        },
+        {
+          type: 'video/mp4',
+          url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.mp4'
+        }
+      ],
+      poster: '',
+    }
+  }
+]
+
 
 export const heroPlayer = {
   sources: [
@@ -68,7 +96,7 @@ export const gallery = [
       videoId: ''
     },
     {
-      type: 'showMore',
+      type: 'button',
       label: 'ui.more'
     },
     {

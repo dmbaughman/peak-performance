@@ -17,6 +17,9 @@
 }
 
 .details-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   flex: 0 1 45%;
   max-width: 45%;
   padding-top: $grid-gutter-width * 2;
@@ -27,6 +30,10 @@
 
   .details-item:last-child & {
     transform: translateX(-15%);
+
+    .btn {
+      align-self: flex-end;
+    }
   }
 }
 
@@ -99,6 +106,7 @@
 
 
 .details-title {
+  margin-bottom: 5px;
   font-size: 112px;
   font-weight: $font-weight-thin;
   line-height: .9;
@@ -114,6 +122,7 @@
 }
 
 .details-description {
+  margin-bottom: 40px;
   font-size: 20px;
   line-height: 1.2;
 }

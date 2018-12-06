@@ -20,10 +20,13 @@ const GalleryItem = ({ item }) => {
             </p>
           </div>
         )
-      case 'showMore':
+      case 'button':
         return (
-          <button className='gallery-show-more btn' type='button'>
+          <button className='gallery-show-more btn btn-primary' type='button'>
             <Translate id={item.label} />
+            <svg className='icon icon-arrow'>
+              <use href='#arrow' />
+            </svg>
           </button>
         )
       default:

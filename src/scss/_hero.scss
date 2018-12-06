@@ -41,6 +41,7 @@ $scroll-width: 75px;
   counter-reset: li;
 
   &-item {
+    width: 0;
     font-size: 25px;
     line-height: 1.75;
     font-weight: $font-weight-normal;

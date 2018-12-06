@@ -24,6 +24,12 @@ class Details extends Component {
           <p className='details-description'>
             <Translate id={`details.${item.sectionId}.description`} />
           </p>
+          <button className='btn btn-primary' type='button'>
+            <Translate id='ui.watch' />
+            <svg className='icon icon-arrow'>
+              <use href='#arrow' />
+            </svg>
+          </button>
         </div>
       </div>
     )

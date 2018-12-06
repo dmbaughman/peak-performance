@@ -19,6 +19,7 @@ $grid-gap: 20px;
 }
 
 .gallery-group {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
 }
@@ -58,6 +59,8 @@ $grid-gap: 20px;
   position: relative;
   padding: $grid-gap / 2;
 
+  //
+  // Videos
   &.video {
     filter: grayscale(100%);
     transition: filter .2s ease;
@@ -93,6 +96,16 @@ $grid-gap: 20px;
     opacity: 1;
   }
 
+  //
+  // Button
+  &.button {
+    position: absolute;
+    top: 0;
+    right: -$grid-gutter-width;
+  }
+
+  //
+  // Size variations
   &.small {
     flex-basis: 50%;
 
@@ -116,6 +129,12 @@ $grid-gap: 20px;
     width: 100%;
     height: 100%;
   }
+}
+
+
+
+.gallery-show-more {
+  white-space: nowrap;
 }
 
 .gallery-thumbnail {

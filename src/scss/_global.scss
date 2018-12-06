@@ -7,15 +7,11 @@
 
 .custom-select {
   position: relative;
+  z-index: 1;
   display: inline-block;
+  color: #fff;
   border: 1px solid #fff;
   background: rgba(#fff, .2);
-  z-index: 1;
-
-  &::after,
-  select {
-    color: #fff;
-  }
 
   &,
   & select {
@@ -25,6 +21,7 @@
   select {
     appearance: none;
     padding: 6px $grid-gutter-width 6px $grid-gutter-width / 2;
+    color: currentColor;
     background: none;
     border: none;
     box-shadow: none;
@@ -37,13 +34,25 @@
     right: 10px;
     z-index: -1;
     content: '\f0d7';
-    line-height: 1;
     font-family: $font-awesome;
+    line-height: 1;
     transform: translateY(-50%);
   }
 }
 
 
 .btn {
+  padding: 13px $grid-gutter-width;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 
+
+  &.btn-primary {
+    color: #fff;
+    background-color: $primary;
+  }
 }

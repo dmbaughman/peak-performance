@@ -36,21 +36,21 @@ export default {
       '<span class="hero-title-top">Better</span><span class="hero-title-bottom">Health</span>',
       ''
     ],
-    steps: {
-      '1': [
-        'live at your peak',
+    titles: {
+      peak: [
+        '<span class="hero-title-top">Peak</span><span class="hero-title-bottom">Performance</span>',
         ''
       ],
-      '2': [
-        'now',
+      energy: [
+        '<span class="hero-title-top">More</span><span class="hero-title-bottom">Energy</span>',
         ''
       ],
-      '3': [
-        'in 12 weeks',
+      health: [
+        '<span class="hero-title-top">Better</span><span class="hero-title-bottom">Health</span>',
         ''
       ],
-      '4': [
-        'for a lifetime',
+      vitality: [
+        '<span class="hero-title-top">Extra</span><span class="hero-title-bottom">Vitality</span>',
         ''
       ]
     }
