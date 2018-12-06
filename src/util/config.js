@@ -4,7 +4,7 @@ export const languages = [
     code: 'en-US'
   },
   {
-    name: 'Spanish',
+    name: 'Español',
     code: 'es-US'
   }
 ]
@@ -43,7 +43,7 @@ export const gallery = [
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/people',
+      thumbnail: 'https://placeimg.com/400/225/arch',
       videoId: ''
     },
     {
@@ -56,7 +56,7 @@ export const gallery = [
     {
       type: 'video',
       size: 'large',
-      thumbnail: 'https://placeimg.com/800/450/people',
+      thumbnail: 'https://placeimg.com/800/450/arch',
       videoId: ''
     }
   ],
@@ -64,7 +64,7 @@ export const gallery = [
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     },
     {
@@ -74,25 +74,25 @@ export const gallery = [
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/people',
+      thumbnail: 'https://placeimg.com/400/225/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     }
   ],
@@ -100,25 +100,25 @@ export const gallery = [
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/people',
+      thumbnail: 'https://placeimg.com/400/225/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     }
   ],
@@ -126,32 +126,64 @@ export const gallery = [
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/people',
+      thumbnail: 'https://placeimg.com/400/225/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/people',
+      thumbnail: 'https://placeimg.com/200/112/arch',
       videoId: ''
     }
   ]
 ]
+
+
+export const detailsItems = [
+  {
+    sectionId: 'nature',
+    image: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-oligo.jpg',
+      alt: ''
+    },
+    logo: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/logo-oligo.png',
+      alt: ''
+    }
+  },
+  {
+    sectionId: 'science',
+    image: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-science.jpg',
+      alt: ''
+    },
+    logo: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/logo-studies.png',
+      alt: ''
+    }
+  }
+]
+
+
+export const links = {
+  freiburg: 'https://www.melaleuca.com'
+}
+

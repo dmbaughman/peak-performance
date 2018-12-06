@@ -23,11 +23,12 @@ class Hero extends Component {
     return (
       <section className='section-hero'>
         <VideoPlayer className='hero-video' {...heroPlayer} />
+        <h2 className='hero-tagline'>
+          <Translate id='hero.tagline' />
+        </h2>
         <ol className='hero-steps'>
           {Array(stepCount).fill().map((step, index) => (
-            <li className={`hero-steps-item${index === activeStep ? ' active' : ''}`} onClick={() => this.handleStepClick(index)} key={index}>
-              <Translate id={`hero.steps.${index + 1}`} />
-            </li>
+            <li className={`hero-steps-item${index === activeStep ? ' active' : ''}`} onClick={() => this.handleStepClick(index)} key={index}></li>
           ))}
         </ol>
         <h1 className='hero-title'>

@@ -10,8 +10,8 @@ class Intro extends Component {
       <section className='section-intro' id='intro'>
         <div className='intro-container container'>
           <div className='intro-image-wrap'>
-            {/* TODO: Replace CDN path with variable from Webpack */}
             <img className='intro-image' src='http://cdnctus.melaleuca.com/microsites/peak-performance/images/boxes.png' />
+            <i className='fa fa-play-circle'></i>
           </div>
           <div className='intro-copy'>
             <h2 className='intro-title'>

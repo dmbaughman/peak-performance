@@ -18,18 +18,34 @@ $scroll-width: 75px;
   overflow: hidden;
 }
 
+.hero-tagline,
+.hero-steps {
+  padding-left: $grid-gutter-width;
+  // text-shadow: 0 0 1px rgba(#000, .5);
+}
+
+.hero-tagline {
+  font-size: 37px;
+  font-weight: $font-weight-thin;
+  color: $gray-lightest;
+
+  em {
+    font-weight: $font-weight-normal;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+}
+
 .hero-steps {
   list-style-type: none;
   counter-reset: li;
-  padding-top: $grid-gutter-width;
-  padding-left: $grid-gutter-width;
 
   &-item {
     font-size: 25px;
     line-height: 1.75;
     font-weight: $font-weight-normal;
+    color: $gray;
     transition: color .2s ease-in-out;
-    cursor: pointer;
 
     &.active {
       color: $primary;
@@ -41,6 +57,7 @@ $scroll-width: 75px;
       margin-right: $grid-gutter-width / 2;
       font-weight: $font-weight-bold;
       letter-spacing: 5px;
+      cursor: pointer;
     }
   }
 }

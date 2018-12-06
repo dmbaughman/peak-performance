@@ -11,9 +11,27 @@ export default {
     watch: [
       'Watch Video',
       ''
-    ]
+    ],
+    chooseLang: [
+      'Choose your language',
+      ''
+    ],
+    languages: {
+      'en-US': [
+        'English',
+        'Inglés'
+      ],
+      'es-US': [
+        'Spanish',
+        'Español '
+      ]
+    }
   },
   hero: {
+    tagline: [
+      'Add <em>years</em> to your life<br>and <em>life</em> to your years.<sup>&trade;</sup>',
+      ''
+    ],
     title: [
       '<span class="hero-title-top">Better</span><span class="hero-title-bottom">Health</span>',
       ''
@@ -161,25 +179,35 @@ export default {
       ]
     }
   },
-  inspired: {
-    title: [
-      'Inspired by <em>Nature</em>',
-      ''
-    ],
-    description: [
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris',
-      ''
-    ]
-  },
-  proven: {
-    title: [
-      'Proven by <em>Science</em>',
-      ''
-    ],
-    description: [
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip',
-      ''
-    ]
+  details: {
+    nature: {
+      title: [
+        'Inspired by <em>Nature</em>',
+        ''
+      ],
+      description: [
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris',
+        ''
+      ],
+      infoLink: [
+        'See how Oligo works',
+        ''
+      ]
+    },
+    science: {
+      title: [
+        'Proven by <em>Science</em>',
+        ''
+      ],
+      description: [
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip',
+        ''
+      ],
+      infoLink: [
+        'Learn more about the Freiburg Study',
+        ''
+      ]
+    }
   },
   footer: {
     title: [

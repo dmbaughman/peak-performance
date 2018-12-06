@@ -12,7 +12,28 @@
 }
 
 .intro-image-wrap {
+  position: relative;
   flex: 0 0 55%;
+  cursor: pointer;
+
+  .fa-play-circle {
+    position: absolute;
+    top: 39%;
+    left: 54%;
+    font-size: 65px;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(#000, .8);
+    opacity: .5;
+    transform: translate(-50%);
+    transition: opacity .2s ease;
+  }
+
+  &:hover {
+    .fa-play-circle {
+      opacity: 1;
+    }
+  }
 }
 
 .intro-image {

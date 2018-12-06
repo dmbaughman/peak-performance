@@ -7,9 +7,11 @@ import { withLocalize, Translate } from 'react-localize-redux';
 class Contents extends Component {
   render () {
     return (
+      <section className='section-contents'>
+        <div className='container'>
 
-      <h1>Contents</h1>
-
+        </div>
+      </section>
     )
   }
 }
