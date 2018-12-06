@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Translate } from 'react-localize-redux'
 import { symptoms } from '../util/config'
+import { getNewActive } from '../util'
 
 class Quiz extends Component {
   state = {
@@ -10,9 +11,8 @@ class Quiz extends Component {
   }
 
   componentDidMount () {
-    const intervalId = setInterval(this.timer, 3000)
     this.setState({
-      intervalId: intervalId
+      intervalId: setInterval(this.timer, 3000)
     })
   }
 
@@ -20,15 +20,9 @@ class Quiz extends Component {
     clearInterval(this.state.intervalId)
   }
 
-
-  getNewActive = (active) => {
-    active = active + 1
-    return active % this.state.symptoms.length
-  }
-
   timer = () => {
     this.setState({
-      active: this.getNewActive(this.state.active)
+      active: getNewActive(this.state.active, this.state.symptoms.length)
     })
   }
 

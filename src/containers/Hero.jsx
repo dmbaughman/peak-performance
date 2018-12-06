@@ -5,11 +5,29 @@ import ReactJWPlayer from 'react-jw-player';
 import Icon from '../components/Icon'
 import VideoPlayer from '../components/VideoPlayer'
 import { heroVideoConfig, heroSlides } from '../util/config'
+import { getNewActive } from '../util'
 
 class Hero extends Component {
   state = {
     stepCount: heroSlides.length,
-    activeStep: 0
+    activeStep: 0,
+    intervalId: null
+  }
+
+  componentDidMount () {
+    this.setState({
+      intervalId: setInterval(this.timer, 5000)
+    })
+  }
+
+  componentWillUnmount () {
+    clearInterval(this.state.intervalId)
+  }
+
+  timer = () => {
+    this.setState({
+      activeStep: getNewActive(this.state.active, heroSlides.length)
+    })
   }
 
   handleStepClick = (index) => {
