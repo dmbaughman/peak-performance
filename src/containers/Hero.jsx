@@ -16,7 +16,7 @@ class Hero extends Component {
 
   componentDidMount () {
     this.setState({
-      intervalId: setInterval(this.timer, 5000)
+      intervalId: setInterval(this.timer, 8000)
     })
   }
 
@@ -26,7 +26,7 @@ class Hero extends Component {
 
   timer = () => {
     this.setState({
-      activeStep: getNewActive(this.state.active, heroSlides.length)
+      activeStep: getNewActive(this.state.activeStep, heroSlides.length)
     })
   }
 
