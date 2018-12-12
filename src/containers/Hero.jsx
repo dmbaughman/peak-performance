@@ -11,28 +11,41 @@ class Hero extends Component {
   state = {
     stepCount: heroSlides.length,
     activeStep: 0,
-    intervalId: null
+    // intervalId: null
   }
 
-  componentDidMount () {
-    this.setState({
-      intervalId: setInterval(this.timer, 8000)
-    })
-  }
+  // componentDidMount () {
+  //   this.setState({
+  //     intervalId: setInterval(this.timer, 8000)
+  //   })
+  // }
 
-  componentWillUnmount () {
-    clearInterval(this.state.intervalId)
-  }
+  // componentWillUnmount () {
+  //   clearInterval(this.state.intervalId)
+  // }
 
-  timer = () => {
-    this.setState({
-      activeStep: getNewActive(this.state.activeStep, heroSlides.length)
-    })
-  }
+  // timer = () => {
+  //   this.setState({
+  //     activeStep: getNewActive(this.state.activeStep, heroSlides.length)
+  //   })
+  // }
 
-  handleStepClick = (index) => {
+  handleStepClick = (index, time) => {
+    const videoEl = document.getElementById('js-hero-video');
     this.setState({
       activeStep: index
+    })
+    videoEl.currentTime = time;
+  }
+
+  handleTimeUpdate = (event) => {
+    // console.log('progress event', event);
+    // console.log('time', event.target.currentTime);
+    const { currentTime } = event.target;
+    heroSlides.forEach((slide, index) => {
+      if (currentTime >= slide.time && currentTime <= slide.time + .25) {
+        this.setState({activeStep: index});
+      }
     })
   }
 
@@ -44,15 +57,14 @@ class Hero extends Component {
           <Translate id='hero.tagline' />
         </h2>
         <ol className='hero-steps'>
-          {Array(stepCount).fill().map((step, index) => (
-            <li className={`hero-steps-item${index === activeStep ? ' active' : ''}`} onClick={() => this.handleStepClick(index)} key={index}></li>
+          {heroSlides.map((slide, index) => (
+            <li className={`hero-steps-item${index === activeStep ? ' active' : ''}`} onClick={() => this.handleStepClick(index, slide.time)} key={index}></li>
           ))}
         </ol>
+        <VideoPlayer className='hero-video' id='js-hero-video' handleTimeUpdate={this.handleTimeUpdate} {...heroVideoConfig} />
         {heroSlides.map((slide, index) => {
-          const videoConfig = {...heroVideoConfig, ...slide.video}
           return (
             <div className={`hero-slide ${index === activeStep ? 'active' : ''}`} key={slide.id}>
-              <VideoPlayer className='hero-video' {...videoConfig} />
               <h1 className='hero-title'>
                 <Translate id={`hero.titles.${slide.id}`} />
               </h1>

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const VideoPlayer = ({ sources, ...rest}) => (
-  <video {...rest}>
+const VideoPlayer = ({ sources, handleTimeUpdate, ...rest}) => (
+  <video onTimeUpdate={handleTimeUpdate} {...rest}>
     {sources.map((source, index) => (
       <source src={source.url} type={source.type} key={index} />
     ))}

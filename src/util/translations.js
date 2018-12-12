@@ -104,20 +104,88 @@ export default {
     ]
   },
   contents: {
-    title: [
-      '<em>Powerful</em><br> Supplements',
-      ''
-    ],
-    overview: {
+    contains: {
       title: [
-        'Sorting pills not required',
+        'Peak Performance Contains',
         ''
       ],
-      description: [
-        'In each box is a 30-day supply of packets containing the supplements that target free radicals, reduce inflammation, and provide optimal nutrition to every major system of the body.',
+      head: [
+        '56'
+      ],
+      items: {
+        vitamins: [
+          'Vitamins',
+          ''
+        ],
+        antioxidants: [
+          'Antioxidants',
+          ''
+        ],
+        macrominerals: [
+          'Macrominerals',
+          ''
+        ],
+        traces: [
+          'Trace Minerals',
+          ''
+        ],
+        botanicals: [
+          'Botanicals',
+          ''
+        ],
+        probiotics: [
+          'Probiotic Strains',
+          ''
+        ],
+        omegas: [
+          'Omega-3s',
+          ''
+        ]
+      }
+    },
+    developed: {
+      title: [
+        'Developed Into',
+        ''
+      ],
+      head: [
+        '6',
+        ''
+      ],
+      subhead: [
+        'Supplements',
+        ''
+      ],
+      items: {
+        patented: [
+          'patented',
+          ''
+        ],
+        proprietary: [
+          'proprietary',
+          ''
+        ],
+        nutritional: [
+          'nutritional',
+          ''
+        ]
+      }
+    },
+    combined: {
+      title: [
+        'Combined In',
+        ''
+      ],
+      head: [
+        '1',
+        ''
+      ],
+      subhead: [
+        'Powerful<br><em>Product</em>',
         ''
       ]
     },
+
     '1': {
       title: [
         '',

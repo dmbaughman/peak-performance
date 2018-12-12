@@ -15,73 +15,40 @@ export const heroVideoConfig = {
   loop: true,
   autoPlay: true,
   controls: false,
-  'plays-inline': 'true'
+  'plays-inline': 'true',
+  sources: [
+    {
+      type: 'video/webm',
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/city-timelapse.webm'
+    },
+    {
+      type: 'video/mp4',
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/city-timelapse.mp4'
+    },
+    {
+      type: 'video/ogg',
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/city-timelapse.ogv'
+    }
+  ],
+  poster: ''
 }
 
 export const heroSlides = [
   {
     id: 'peak',
-    video: {
-      sources: [
-        {
-          type: 'video/webm',
-          url: ''
-        },
-        {
-          type: 'video/mp4',
-          url: ''
-        }
-      ],
-      poster: '',
-    }
+    time: 0
   },
   {
     id: 'energy',
-    video: {
-      sources: [
-        {
-          type: 'video/webm',
-          url: ''
-        },
-        {
-          type: 'video/mp4',
-          url: ''
-        }
-      ],
-      poster: '',
-    }
+    time: 5.1
   },
   {
     id: 'health',
-    video: {
-      sources: [
-        {
-          type: 'video/webm',
-          url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.webm'
-        },
-        {
-          type: 'video/mp4',
-          url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.mp4'
-        }
-      ],
-      poster: '',
-    }
+    time: 10.3
   },
   {
     id: 'vitality',
-    video: {
-      sources: [
-        {
-          type: 'video/webm',
-          url: ''
-        },
-        {
-          type: 'video/mp4',
-          url: ''
-        }
-      ],
-      poster: '',
-    }
+    time: 16
   }
 ]
 
@@ -230,6 +197,39 @@ export const gallery = [
       videoId: ''
     }
   ]
+]
+
+
+export const contentsList = [
+  {
+    id: 'contains',
+    items: [
+      'vitamins',
+      'antioxidants',
+      'macrominerals',
+      'traces',
+      'botanicals',
+      'probiotics',
+      'omegas'
+    ]
+  },
+  {
+    id: 'developed',
+    subhead: 'supplements',
+    items: [
+      'patented',
+      'proprietary',
+      'nutritional'
+    ]
+  },
+  {
+    id: 'combined',
+    subhead: 'powerfulProduct',
+    img: {
+      url: 'packets.png',
+      altText: 'Peak Performance Packets'
+    }
+  }
 ]
 
 
