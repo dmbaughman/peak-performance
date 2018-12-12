@@ -226,7 +226,7 @@ export const contentsList = [
     id: 'combined',
     subhead: 'powerfulProduct',
     img: {
-      url: 'packets.png',
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/packets.png',
       altText: 'Peak Performance Packets'
     }
   }

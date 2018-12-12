@@ -86,7 +86,7 @@ class Contents extends Component {
                   </ul>
                 }
                 {item.img &&
-                  <img src={item.img.url} alt={item.img.altText} />
+                  <img className='contents-image' src={item.img.url} alt={item.img.altText} />
                 }
               </div>
             ))}

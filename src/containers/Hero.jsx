@@ -39,8 +39,6 @@ class Hero extends Component {
   }
 
   handleTimeUpdate = (event) => {
-    // console.log('progress event', event);
-    // console.log('time', event.target.currentTime);
     const { currentTime } = event.target;
     heroSlides.forEach((slide, index) => {
       if (currentTime >= slide.time && currentTime <= slide.time + .25) {
