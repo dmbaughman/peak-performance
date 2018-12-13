@@ -47,9 +47,6 @@ class Quiz extends Component {
     return (
       <section className='section-quiz'>
         <div className='quiz-inner'>
-          <p className='quiz-lead'>
-            <Translate id='quiz.lead' />
-          </p>
           <ol className='quiz-symptoms'>
             {symptoms.map((symptom, index) => (
               <li className={`quiz-symptom ${this.getStatusClassName(index)}`} key={index}>

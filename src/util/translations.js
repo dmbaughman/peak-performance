@@ -29,7 +29,7 @@ export default {
   },
   hero: {
     tagline: [
-      'Add <em>years</em> to your life<br>and <em>life</em> to your years.<sup>&trade;</sup>',
+      'Add years to your life<br>and life to your years.<sup>&trade;</sup>',
       ''
     ],
     title: [
@@ -56,50 +56,50 @@ export default {
     }
   },
   quiz: {
-    lead: [
-      'Is free radical damage starting to show?  You',
-      ''
-    ],
     symptoms: {
+      freeRadicals: [
+        'Is <em>free radical damage</em> starting to show?',
+        ''
+      ],
       tired: [
-        'feel tired',
+        'Are you feeling <em>more tired</em> than you\'d like?',
         ''
       ],
       energy: [
-        'lack energy',
+        'Do you <em>run out of energy?</em>',
         ''
       ],
       sleep: [
-        'sleep poorly',
+        'Do you have <em>trouble sleeping?</em>',
         ''
       ],
-      sore: [
-        'feel sore after exercise',
+      headaches: [
+        'Do you suffer from <em>frequent headaches?</em>',
         ''
       ],
-      inflammation: [
-        'suffer from inflammation',
+      anxiety: [
+        'Are you feeling <em>more anxious</em> lately?',
+        ''
+      ],
+      joints: [
+        'Do your <em>joints ache</em> more than they used to?',
         ''
       ]
     }
   },
   intro: {
     title: [
-      'Your body needs<br><em>better nutrition</em>',
+      'Two major threats to long-term health:<br><em>free radicals & inflammation</em>',
       ''
     ],
     description: [
-      '<em>Peak Performance Nutrition Pack</em> was shown to reduce free radicals associated with activity-induced inflammation.<sup>*</sup> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'They are the root cause of degenerative conditions and aging. Only the <em>Peak Performance Pack</em> has been shown to reduce free radicals and inflammation, letting your whole body perform at optimum levels.',
       ''
     ]
   },
   gallery: {
     title: [
-      'Changing <em>Lives</em>',
-      ''
-    ],
-    description: [
-      'Share your story at <a href="mailto:PeakPerformanceResults@Melaleuca.com">PeakPerformanceResults@Melaleuca.com</a>',
+      'Add years to your life<br>and life to your years.<br><em>Just ask Karen.</em>',
       ''
     ]
   },
@@ -254,7 +254,7 @@ export default {
         ''
       ],
       description: [
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris',
+        'Patented Oligo&reg; Technology mimics the way minerals are found in plants to deliver nutrition to the body that is far more absorbable than traditional minerals, while severely limiting free radical activity.',
         ''
       ],
       infoLink: [
@@ -268,7 +268,7 @@ export default {
         ''
       ],
       description: [
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip',
+        'Participants in human clinical studies showed improvement to 25 key health markers after taking Peak Performance—many results appeared within just 60 minutes. And health markers increased the longer they took it.',
         ''
       ],
       infoLink: [
@@ -283,11 +283,11 @@ export default {
       ''
     ],
     lead: [
-      'We are passionate about people having a natural way to be healthy.',
+      'We are passionate about enhancing lives through advanced nutrition.',
       ''
     ],
     contact: [
-      'Ask the person who referred you to this site to learn more.',
+      'If you’re ready to feel the difference, contact the person who sent you to this site.',
       ''
     ],
     disclaimer: [

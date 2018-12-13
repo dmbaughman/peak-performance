@@ -15,9 +15,6 @@ const GalleryItem = ({ item }) => {
             <h2 className='gallery-title'>
               <Translate id={item.title} />
             </h2>
-            <p className='gallery-description'>
-              <Translate id={item.description} />
-            </p>
           </div>
         )
       case 'button':

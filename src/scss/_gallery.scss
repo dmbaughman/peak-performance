@@ -142,8 +142,9 @@ $grid-gap: 20px;
 }
 
 .gallery-title {
-  font-size: 85px;
+  font-size: 42px;
   font-weight: $font-weight-thin;
+  line-height: 1;
 
   em {
     font-weight: $font-weight-normal;

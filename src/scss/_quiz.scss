@@ -5,6 +5,7 @@
 }
 
 .quiz-inner {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -13,25 +14,21 @@
   height: 100%;
 }
 
-.quiz-lead,
 .quiz-symptoms {
-  padding: 10px;
-  font-size: 27px;
-}
-
-.quiz-lead {
-  font-weight: $font-weight-light;
-  margin-bottom: 0;
-}
-
-.quiz-symptoms {
-  position: relative;
   height: 30px;
-  list-style-type: none;
-  font-weight: $font-weight-medium;
-  color: $primary;
+  padding: 20px;
+  margin-bottom: 0;
+  font-size: 27px;
+  font-weight: $font-weight-light;
+  letter-spacing: .2em;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  list-style-type: none;
+
+  em {
+    font-weight: $font-weight-medium;
+    font-style: normal;
+    color: $primary;
+  }
 
   &.hidden {
     visibility: hidden;
@@ -44,9 +41,11 @@
 
 .quiz-symptom {
   position: absolute;
+  top: 0;
+  left: 50%;
   white-space: nowrap;
   visibility: hidden;
-  transform: translateY(150%);
+  transform: translate(-50%, 150%);
 
   &.active,
   &.prev {
@@ -60,35 +59,35 @@
 
   &.active {
     animation-name: slidein;
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 
   &.prev {
     animation-name: slideout;
-    transform: translateY(150%);
+    transform: translate(-50%, 150%);
   }
 }
 
 @keyframes slidein {
   from {
-    transform: translateY(150%);
+    transform: translate(-50%, 150%);
     opacity: 0;
   }
 
   to {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
     opacity: 1;
   }
 }
 
 @keyframes slideout {
   from {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
     opacity: 1;
   }
 
   to {
-    transform: translateY(-150%);
+    transform: translate(-50%, -150%);
     opacity: 0;
   }
 }

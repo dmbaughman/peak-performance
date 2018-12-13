@@ -73,11 +73,13 @@ export const heroPlayer = {
 }
 
 export const symptoms = [
-  'tired',
-  'energy',
+  'freeRadicals',
   'sleep',
-  'sore',
-  'inflammation'
+  'tired',
+  'joints',
+  'energy',
+  'anxiety',
+  'headaches'
 ]
 
 
