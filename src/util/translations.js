@@ -186,65 +186,71 @@ export default {
       ]
     },
 
-    '1': {
+    supplements: {
       title: [
-        '',
+        'Supplements in the Pack',
         ''
       ],
-      description: [
-        '',
-        ''
-      ]
-    },
-    '2': {
-      title: [
-        '',
-        ''
-      ],
-      description: [
-        '',
-        ''
-      ]
-    },
-    '3': {
-      title: [
-        '',
-        ''
-      ],
-      description: [
-        '',
-        ''
-      ]
-    },
-    '4': {
-      title: [
-        '',
-        ''
-      ],
-      description: [
-        '',
-        ''
-      ]
-    },
-    '5': {
-      title: [
-        '',
-        ''
-      ],
-      description: [
-        '',
-        ''
-      ]
-    },
-    '6': {
-      title: [
-        '',
-        ''
-      ],
-      description: [
-        '',
-        ''
-      ]
+      vitality: {
+        title: [
+          'Vitality Multivitamin & Mineral',
+          ''
+        ],
+        description: [
+          '<p>Essential nutrients enhance overall well-being*</p><p>Powered by Oligo to improve absorption and reduce free radicals*</p>',
+          ''
+        ]
+      },
+      cellwise: {
+        title: [
+          'CellWise',
+          ''
+        ],
+        description: [
+          '<p>Provides broad-spectrum age-defying and antioxidant protection*</p><p>Helps fight free radicals from head to toe*</p>',
+          ''
+        ]
+      },
+      provex: {
+        title: [
+          'ProvexCV',
+          ''
+        ],
+        description: [
+          '<p>Helps maintain healthy blood pressure*</p><p>Provides antioxidants that fight free radicals*</p>',
+          ''
+        ]
+      },
+      recover: {
+        title: [
+          'Recover AI',
+          ''
+        ],
+        description: [
+          '<p>Promotes a healthy inflammatory response to activity*</p><p>Supports healthy joint and muscle function*</p>',
+          ''
+        ]
+      },
+      cardiomega: {
+        title: [
+          'CardiOmega EPA',
+          ''
+        ],
+        description: [
+          '<p>Supports cardiovascular performance and speeds recovery*</p><p>Promotes a normal response to activity-induced inflammation*</p>',
+          ''
+        ]
+      },
+      florify: {
+        title: [
+          'Florify',
+          ''
+        ],
+        description: [
+          '<p>Delivers 10 billion cfu of probiotics to help balance and protect your digestive tract*</p><p>Boosts nutrient absorption and supports immunity*</p>',
+          ''
+        ]
+      }
     }
   },
   details: {
@@ -291,7 +297,7 @@ export default {
       ''
     ],
     disclaimer: [
-      'These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.',
+      '* These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.',
       ''
     ],
     copyright: [

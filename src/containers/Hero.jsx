@@ -10,25 +10,8 @@ import { getNewActive } from '../util'
 class Hero extends Component {
   state = {
     stepCount: heroSlides.length,
-    activeStep: 0,
-    // intervalId: null
+    activeStep: 0
   }
-
-  // componentDidMount () {
-  //   this.setState({
-  //     intervalId: setInterval(this.timer, 8000)
-  //   })
-  // }
-
-  // componentWillUnmount () {
-  //   clearInterval(this.state.intervalId)
-  // }
-
-  // timer = () => {
-  //   this.setState({
-  //     activeStep: getNewActive(this.state.activeStep, heroSlides.length)
-  //   })
-  // }
 
   handleStepClick = (index, time) => {
     const videoEl = document.getElementById('js-hero-video');
@@ -54,21 +37,30 @@ class Hero extends Component {
         <h2 className='hero-tagline'>
           <Translate id='hero.tagline' />
         </h2>
-        <ol className='hero-steps'>
+        <ol className='hero-steps' role='tablist'>
           {heroSlides.map((slide, index) => (
-            <li className={`hero-steps-item${index === activeStep ? ' active' : ''}`} onClick={() => this.handleStepClick(index, slide.time)} key={index}></li>
+            <li
+              className={`hero-steps-item${index === activeStep ? ' active' : ''}`}
+              onClick={() => this.handleStepClick(index, slide.time)}
+              role='tab'
+              aria-selected={index === activeStep}
+              aria-controls='hero-slide-panel'
+              tabIndex={index}
+              key={index}></li>
           ))}
         </ol>
         <VideoPlayer className='hero-video' id='js-hero-video' handleTimeUpdate={this.handleTimeUpdate} {...heroVideoConfig} />
-        {heroSlides.map((slide, index) => {
-          return (
-            <div className={`hero-slide ${index === activeStep ? 'active' : ''}`} key={slide.id}>
-              <h1 className='hero-title'>
-                <Translate id={`hero.titles.${slide.id}`} />
-              </h1>
-            </div>
-          )
-        })}
+        <div className='hero-slide-panel' id='hero-slide-panel'>
+          {heroSlides.map((slide, index) => {
+            return (
+              <div className={`hero-slide ${index === activeStep ? 'active' : ''}`} key={slide.id}>
+                <h1 className='hero-title'>
+                  <Translate id={`hero.titles.${slide.id}`} />
+                </h1>
+              </div>
+            )
+          })}
+        </div>
         <div className='hero-scroll'>
           <a className='hero-scroll-link' href='#intro'>
             <Translate id='ui.scroll' />

@@ -202,7 +202,7 @@ export const gallery = [
 ]
 
 
-export const contentsList = [
+export const contentsIntro = [
   {
     id: 'contains',
     items: [
@@ -232,6 +232,51 @@ export const contentsList = [
       altText: 'Peak Performance Packets'
     }
   }
+]
+
+export const supplements = [
+  {
+    id: 'vitality',
+    image: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-vitality.jpg',
+      alt: 'Vitality Multivitamin & Mineral'
+    }
+  },
+  {
+    id: 'cellwise',
+    image: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-cellwise.jpg',
+      alt: 'Vitality Multivitamin & Mineral'
+    }
+  },
+  {
+    id: 'provex',
+    image: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-provex.jpg',
+      alt: 'Vitality Multivitamin & Mineral'
+    }
+  },
+  {
+    id: 'recover',
+    image: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-recover.jpg',
+      alt: 'Vitality Multivitamin & Mineral'
+    }
+  },
+  {
+    id: 'cardiomega',
+    image: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-cardiomega.jpg',
+      alt: 'Vitality Multivitamin & Mineral'
+    }
+  },
+  {
+    id: 'florify',
+    image: {
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-florify.jpg',
+      alt: 'Vitality Multivitamin & Mineral'
+    }
+  },
 ]
 
 
