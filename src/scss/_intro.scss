@@ -1,32 +1,53 @@
+$intro-gutter: 40px;
+
 .section-intro {
-  padding: 40px;
   background-color: $gray-lightest;
   color: $gray-darker;
+  padding-top: $intro-gutter;
+  padding-bottom: $intro-gutter;
+
+  @include media-breakpoint-up('lg') {
+    padding: $intro-gutter;
+  }
 }
 
 .intro-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: stretch;
+
+  @include media-breakpoint-up('lg') {
+    flex-direction: row;
+  }
 }
 
 .intro-image-wrap {
   position: relative;
-  flex: 0 0 55%;
   cursor: pointer;
+
+  @include media-breakpoint-down('md') {
+    // margin: -30px;
+  }
+
+  @include media-breakpoint-up('lg') {
+    flex: 0 0 55%;
+  }
 
   .fa-play-circle {
     position: absolute;
     top: 39%;
-    left: 54%;
+    left: 50%;
     font-size: 65px;
     line-height: 1;
     color: #fff;
     text-shadow: 0 0 10px rgba(#000, .8);
-    opacity: .5;
     transform: translate(-50%);
     transition: opacity .2s ease;
+  }
+
+  @include media-breakpoint-up('lg') {
+    opacity: .5;
   }
 
   &:hover {
@@ -38,17 +59,31 @@
 
 .intro-image {
   max-width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .intro-copy {
-  flex: 0 0 45%;
-  padding: 40px;
+  padding-right: $intro-gutter;
+  padding-left: $intro-gutter;
+
+  @include media-breakpoint-up('lg') {
+    padding-top: $intro-gutter;
+    padding-bottom: $intro-gutter;
+
+    flex: 0 0 45%;
+  }
 }
 
 .intro-title {
-  font-size: 50px;
+  margin-bottom: $spacer;
+  font-size: 9vw;
   line-height: 1;
   font-weight: $font-weight-thin;
+
+  @include media-breakpoint-up('lg') {
+    font-size: 50px;
+  }
 
   em {
     font-weight: $font-weight-normal;
