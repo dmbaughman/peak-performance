@@ -298,7 +298,7 @@ $opacity-faded: .15;
 
     &.active {
       visibility: visible;
-      animation: fade-in .5s ease forwards;
+      animation: fade-in 1s ease forwards;
     }
   }
 

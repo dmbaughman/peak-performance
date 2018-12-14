@@ -47,17 +47,15 @@ $scroll-width: 75px;
 
 .hero-tagline {
   padding-top: $grid-gutter-width * (2 / 3);
-  font-size: 50px;
   line-height: 1;
+  font-size: 27px;
   font-weight: $font-weight-light;
   color: #000;
-  text-shadow: 1.3px 1.5px 0 rgba(#000, .8);
 
-  // em {
-  //   font-weight: $font-weight-normal;
-  //   font-style: normal;
-  //   text-transform: uppercase;
-  // }
+  @include media-breakpoint-up('lg') {
+    font-size: 50px;
+    text-shadow: 1.3px 1.5px 0 rgba(#000, .8);
+  }
 }
 
 .hero-steps {
@@ -73,7 +71,7 @@ $scroll-width: 75px;
     transition: color .2s ease-in-out;
 
     &.active {
-      color: $primary;
+      color: #fff;
     }
 
     &::before {
@@ -89,7 +87,7 @@ $scroll-width: 75px;
 
 .hero-title {
   position: absolute;
-  right: 40px + $scroll-width;
+  right: 10px;
   bottom: 0;
   font-family: $gotham-condensed;
   font-size: 20vw;
@@ -98,6 +96,10 @@ $scroll-width: 75px;
   text-transform: uppercase;
   text-align: right;
   margin-bottom: -.8vw;
+
+  @include media-breakpoint-up('lg') {
+    right: 40px + $scroll-width;
+  }
 
   &-top {
     @include text-stroke(rgba(#000,.2), #fff, 1px);
@@ -113,16 +115,20 @@ $scroll-width: 75px;
 }
 
 .hero-scroll {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: $scroll-width;
-  background-color: rgba(#000, .75);
+  display: none;
+
+  @include media-breakpoint-up('lg') {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: $scroll-width;
+    background-color: rgba(#000, .75);
+  }
 }
 
 .hero-scroll-link {
