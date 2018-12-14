@@ -89,7 +89,8 @@ export const gallery = [
       type: 'video',
       size: 'medium',
       thumbnail: 'https://placeimg.com/400/225/nature',
-      videoId: ''
+      videoId: '',
+      largeScreen: true
     },
     {
       type: 'text',
@@ -114,18 +115,49 @@ export const gallery = [
     },
     {
       type: 'button',
-      label: 'ui.more'
+      label: 'ui.more',
+      largeScreen: true
     },
     {
       type: 'video',
       size: 'medium',
       thumbnail: 'https://placeimg.com/400/225/nature',
+      videoId: '',
+      largeScreen: true
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/nature',
       videoId: ''
     },
     {
       type: 'video',
       size: 'small',
       thumbnail: 'https://placeimg.com/200/112/nature',
+      videoId: '',
+      largeScreen: true
+    },
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/nature',
+      videoId: '',
+      largeScreen: true
+    }
+  ],
+  [
+    {
+      type: 'video',
+      size: 'small',
+      thumbnail: 'https://placeimg.com/200/112/nature',
+      videoId: '',
+      largeScreen: true
+    },
+    {
+      type: 'video',
+      size: 'medium',
+      thumbnail: 'https://placeimg.com/400/225/nature',
       videoId: ''
     },
     {
@@ -146,33 +178,8 @@ export const gallery = [
       type: 'video',
       size: 'small',
       thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
-    },
-    {
-      type: 'video',
-      size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/nature',
-      videoId: ''
-    },
-    {
-      type: 'video',
-      size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
-    },
-    {
-      type: 'video',
-      size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
-    }
-  ],
-  [
-    {
-      type: 'video',
-      size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
+      videoId: '',
+      largeScreen: true
     },
     {
       type: 'video',
@@ -196,7 +203,8 @@ export const gallery = [
       type: 'video',
       size: 'small',
       thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
+      videoId: '',
+      largeScreen: true
     }
   ]
 ]

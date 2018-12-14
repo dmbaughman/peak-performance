@@ -61,3 +61,10 @@ body {
     background-color: $primary;
   }
 }
+
+
+.hidden-md-down {
+  @include media-breakpoint-down('md') {
+    display: none;
+  }
+}

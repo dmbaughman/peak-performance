@@ -32,7 +32,7 @@ const GalleryItem = ({ item }) => {
   }
 
   return (
-    <div className={`gallery-item ${item.type} ${item.size}`}>
+    <div className={`gallery-item ${item.type} ${item.size} ${item.largeScreen ? 'hidden-md-down' : ''}`}>
       {renderSwitch(item)}
     </div>
   )
