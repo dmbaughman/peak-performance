@@ -1,7 +1,11 @@
 .section-quiz {
-  padding: ($grid-gutter-width * 2) $grid-gutter-width;
+  padding: 40px;
   background-color: $gray-darkest;
   color: #fff;
+
+  @include media-breakpoint-up('lg') {
+    padding: ($grid-gutter-width * 2) $grid-gutter-width;
+  }
 }
 
 .quiz-inner {
@@ -12,17 +16,32 @@
   justify-content: center;
   overflow: hidden;
   height: 100%;
+
+  @include media-breakpoint-up('lg') {
+
+  }
+
 }
 
 .quiz-symptoms {
-  height: 30px;
+  height: 18vw;
   padding: 20px;
   margin-bottom: 0;
-  font-size: 27px;
+  font-size: 5.4vw;
+  line-height: 1.1;
   font-weight: $font-weight-light;
   letter-spacing: .2em;
+  text-align: center;
   text-transform: uppercase;
   list-style-type: none;
+
+
+  @include media-breakpoint-up('lg') {
+    height: 30px;
+    font-size: 27px;
+    line-height: 1;
+  }
+
 
   em {
     font-weight: $font-weight-medium;
@@ -43,9 +62,15 @@
   position: absolute;
   top: 0;
   left: 50%;
-  white-space: nowrap;
   visibility: hidden;
-  transform: translate(-50%, 150%);
+  width: 100%;
+  transform: translate(-50%, 200%);
+
+  @include media-breakpoint-up('lg') {
+    // width: auto;
+    white-space: nowrap;
+  }
+
 
   &.active,
   &.prev {

@@ -11,6 +11,7 @@ $scroll-width: 75px;
   position: relative;
   z-index: 1;
   background-color: $gray-dark;
+  overflow: hidden;
 }
 
 .hero-slide {
