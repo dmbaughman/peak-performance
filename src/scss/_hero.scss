@@ -42,7 +42,7 @@ $scroll-width: 75px;
 
 .hero-tagline,
 .hero-steps {
-  padding-left: $grid-gutter-width * (2 / 3);
+  padding-left: $gutter-mobile;
 
   @include media-breakpoint-up('lg') {
     padding-left: $grid-gutter-width;
@@ -91,7 +91,7 @@ $scroll-width: 75px;
 
 .hero-title {
   position: absolute;
-  right: 10px;
+  right: $gutter-mobile;
   bottom: 0;
   font-family: $gotham-condensed;
   font-size: 20vw;

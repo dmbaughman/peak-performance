@@ -1,13 +1,11 @@
-$intro-gutter: 40px;
-
 .section-intro {
   background-color: $gray-lightest;
   color: $gray-darker;
-  padding-top: $intro-gutter;
-  padding-bottom: $intro-gutter;
+  padding-top: $gutter-mobile;
+  padding-bottom: $gutter-mobile;
 
   @include media-breakpoint-up('lg') {
-    padding: $intro-gutter;
+    padding: $gutter-mobile;
   }
 }
 
@@ -41,14 +39,15 @@ $intro-gutter: 40px;
     font-size: 65px;
     line-height: 1;
     color: #fff;
+    opacity: .5;
     text-shadow: 0 0 10px rgba(#000, .8);
     transform: translate(-50%);
     transition: opacity .2s ease;
+
+    // @include media-breakpoint-up('lg') {
+    // }
   }
 
-  @include media-breakpoint-up('lg') {
-    opacity: .5;
-  }
 
   &:hover {
     .fa-play-circle {
@@ -59,17 +58,17 @@ $intro-gutter: 40px;
 
 .intro-image {
   max-width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: $gutter-mobile / 2;
+  padding-left: $gutter-mobile / 2;
 }
 
 .intro-copy {
-  padding-right: $intro-gutter;
-  padding-left: $intro-gutter;
+  padding-right: $gutter-mobile;
+  padding-left: $gutter-mobile;
 
   @include media-breakpoint-up('lg') {
-    padding-top: $intro-gutter;
-    padding-bottom: $intro-gutter;
+    padding-top: $gutter-mobile;
+    padding-bottom: $gutter-mobile;
 
     flex: 0 0 45%;
   }

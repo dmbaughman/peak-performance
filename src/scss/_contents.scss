@@ -2,148 +2,50 @@ $opacity-faded: .15;
 
 .section-contents {
   min-height: 830px;
-  padding-top: $grid-gutter-width;
-  padding-bottom: $grid-gutter-width;
-  background-color: $gray-darkest;
-  background-image: url('https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-contents.jpg');
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
+  padding-right: $gutter-mobile;
+  padding-left: $gutter-mobile;
+  background-color: #0c0e0e;
 
-  &,
-  & .container {
-    display: flex;
-    align-items: stretch;
-    justify-content: stretch;
-  }
-
-  .container {
-    position: relative;
-  }
-
-  .container,
-  .contents-slide {
-    flex: 1 0 100%;
+  &:before {
+    display: block;
+    content: '';
+    width: 100vw;
+    height: 90vw;
+    margin-right: -$gutter-mobile;
+    margin-left: -$gutter-mobile;
+    background: url('https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-contents.jpg') no-repeat left top;
+    background-size: cover;
   }
 }
 
 .contents-slide,
 .contents-supplements {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  align-self: stretch;
-  justify-self: stretch;
   color: #fff;
 }
 
-.contents-slide {
-
-  &.active {
-    animation: fade-in 2s ease both;
-  }
-
-  &.fade-out {
-    animation: fade-out 1s ease both;
-  }
-}
-
-.contents-title,
-.contents-head,
-.contents-subhead,
-.contents-list,
-.contents-image {
-  position: absolute;
-}
-
-.contents-title,
-.contents-head,
-.contents-subhead,
-.contents-list-item,
-.contents-image {
-  opacity: 0;
-
-  .contents-slide.fade-out & {
-    opacity: 1;
-  }
-}
-
 .contents-title {
-  top: 30%;
-  right: 40%;
   font-size: 26px;
   font-weight: $font-weight-medium;
   text-transform: uppercase;
-  white-space: nowrap;
   letter-spacing: .3em;
-
-  .contents-slide.active &,
-  .contents-slide.fade-out & {
-    opacity: $opacity-faded;
-  }
-
-  .contents-supplements.active & {
-    opacity: 1;
-  }
-
-  .contents-slide.active & {
-    animation: title-fade-in 3s ease both;
-  }
+  opacity: .15;
 }
 
-
 .contents-head {
-  top: 11%;
-  right: 38%;
   font-family: $gotham-condensed;
   font-size: 225px;
   font-weight: $font-weight-normal;
   letter-spacing: -0.01em;
   color: $primary;
-
-  .fade-out & {
-    opacity: 1;
-  }
-
-  //
-  // First slide
-  .contains.active & {
-    animation: slide-up-in 1s ease 2s both;
-  }
-  .contains.fade-out & {
-    // animation: slide-up-out 1s ease;
-  }
-
-  //
-  // Second slide
-  .developed.active & {
-    animation: slide-left-in 1s ease 2s both;
-  }
-
-  //
-  // Third slide
-  .combined.active & {
-
-  }
 }
 
 .contents-subhead {
-  top: 42%;
-  left: 57%;
-  font-size: 50px;
-  line-height: 1.4;
+  font-size: 8vw;
   color: $primary;
   text-transform: uppercase;
   letter-spacing: .2em;
 
-  .developed.active & {
-    animation: slide-left-in 1s ease 3.5s both;
-  }
-
   .combined & {
-    top: 18.5%;
-    left: 63%;
-    font-size: 85px;
     font-weight: $font-weight-thin;
     line-height: 1;
     color: #fff;
@@ -159,69 +61,16 @@ $opacity-faded: .15;
   }
 }
 
+
 .contents-list {
-  top: 22%;
-  left: 63%;
   list-style: none;
   padding: 0;
-  font-size: 50px;
   line-height: 1.24;
   font-weight: $font-weight-thin;
-
-  .developed & {
-    top: 17%;
-  }
-
-  &-item {
-    .contains.active & {
-      animation: slide-up-in 1s ease both;
-    }
-    .contains.fade-out & {
-      // animation: slide-up-out 1s ease forwards;
-    }
-    .contains & {
-      @for $i from 1 through 12 {
-        &:nth-child(#{$i}n) {
-          animation-delay: #{2.5 + $i * 0.25}s;
-        }
-      }
-    }
-
-    .developed.active & {
-
-      animation: slide-left-in 1s ease 2s both;
-
-      @for $i from 1 through 12 {
-        &:nth-child(#{$i}n) {
-          animation-delay: #{2.5 + $i * 0.25}s;
-        }
-      }
-    }
-  }
 }
 
 .contents-image {
-  top: 46%;
-  right: 18%;
-  max-width: 333px;
-}
 
-.contents-slide.combined.active {
-  // opacity: 0;
-  // animation: fade-scale-in 3s ease-out 5s both;
-
-  // .contents-head,
-  // .contents-subhead,
-  // .contents-image {
-  //   opacity: 1;
-  // }
-
-
-  .contents-head,
-  .contents-subhead,
-  .contents-image {
-    animation: fade-scale-in 3s ease-out 2s both;
-  }
 }
 
 
@@ -230,41 +79,246 @@ $opacity-faded: .15;
 // Supplements list
 //
 
-.contents-supplements {
-  opacity: 0;
-
-  &.active {
-    animation: fade-in 3s ease forwards;
-  }
-}
-
 .supplements-list {
-  position: absolute;
-  right: 5%;
-  bottom: 12%;
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  width: 56%;
 
   &-item {
-    margin-right: 20px;
-    margin-bottom: 20px;
     box-shadow: 0;
     transition: box-shadow .3s ease;
     cursor: pointer;
-
-    &:nth-child(4) {
-      margin-left: auto;
-    }
 
     &.active {
       box-shadow: 0 0 0 5px $primary;
     }
   }
 }
+
+
+
+@include media-breakpoint-up('lg') {
+  .section-contents {
+    padding: $grid-gutter-width;
+    background-image: url('https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-contents.jpg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: left top;
+    background-position: left top;
+    background-size: cover;
+
+    &,
+    & .container {
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .container,
+    .contents-slide {
+      flex: 1 0 100%;
+    }
+  }
+
+
+  .contents-slide,
+  .contents-supplements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-self: stretch;
+    justify-self: stretch;
+  }
+
+  .contents-slide {
+    &.active {
+      animation: fade-in 2s ease both;
+    }
+
+    &.fade-out {
+      animation: fade-out 1s ease both;
+    }
+  }
+
+  .contents-title,
+  .contents-head,
+  .contents-subhead,
+  .contents-list,
+  .contents-image {
+    position: absolute;
+  }
+
+  .contents-title,
+  .contents-head,
+  .contents-subhead,
+  .contents-list-item,
+  .contents-image {
+    opacity: 0;
+
+    .contents-slide.fade-out & {
+      opacity: 1;
+    }
+  }
+
+  .contents-title {
+    top: 30%;
+    right: 40%;
+    white-space: nowrap;
+
+    .contents-slide.active &,
+    .contents-slide.fade-out & {
+      opacity: $opacity-faded;
+    }
+
+    .contents-supplements.active & {
+      opacity: 1;
+    }
+
+    .contents-slide.active & {
+      animation: title-fade-in 3s ease both;
+    }
+  }
+
+  .contents-head {
+    top: 11%;
+    right: 38%;
+
+    .fade-out & {
+      opacity: 1;
+    }
+
+    //
+    // First slide
+    .contains.active & {
+      animation: slide-up-in 1s ease 2s both;
+    }
+    .contains.fade-out & {
+      // animation: slide-up-out 1s ease;
+    }
+
+    //
+    // Second slide
+    .developed.active & {
+      animation: slide-left-in 1s ease 2s both;
+    }
+
+    //
+    // Third slide
+    .combined.active & {
+
+    }
+  }
+
+  .contents-subhead {
+    top: 42%;
+    left: 57%;
+    font-size: 50px;
+    line-height: 1.4;
+
+    .developed.active & {
+      animation: slide-left-in 1s ease 3.5s both;
+    }
+
+    .combined & {
+      top: 18.5%;
+      left: 63%;
+      font-size: 85px;
+    }
+  }
+
+  .contents-list {
+    top: 22%;
+    left: 63%;
+    font-size: 50px;
+
+    .developed & {
+      top: 17%;
+    }
+
+    &-item {
+      .contains.active & {
+        animation: slide-up-in 1s ease both;
+      }
+      .contains.fade-out & {
+        // animation: slide-up-out 1s ease forwards;
+      }
+      .contains & {
+        @for $i from 1 through 12 {
+          &:nth-child(#{$i}n) {
+            animation-delay: #{2.5 + $i * 0.25}s;
+          }
+        }
+      }
+
+      .developed.active & {
+
+        animation: slide-left-in 1s ease 2s both;
+
+        @for $i from 1 through 12 {
+          &:nth-child(#{$i}n) {
+            animation-delay: #{2.5 + $i * 0.25}s;
+          }
+        }
+      }
+    }
+  }
+
+
+  .contents-image {
+    top: 46%;
+    right: 18%;
+    max-width: 333px;
+  }
+
+  .contents-slide.combined.active {
+    .contents-head,
+    .contents-subhead,
+    .contents-image {
+      animation: fade-scale-in 3s ease-out 2s both;
+    }
+  }
+
+
+
+
+
+  .contents-supplements {
+    opacity: 0;
+
+    &.active {
+      animation: fade-in 3s ease forwards;
+    }
+  }
+
+  .supplements-list {
+    position: absolute;
+    right: 5%;
+    bottom: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 56%;
+
+    &-item {
+      margin-right: 20px;
+      margin-bottom: 20px;
+
+      &:nth-child(4) {
+        margin-left: auto;
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
 
 .supplements-image {
   max-width: 100%;
