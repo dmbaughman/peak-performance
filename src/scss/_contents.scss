@@ -5,17 +5,6 @@ $opacity-faded: .15;
   padding-right: $gutter-mobile;
   padding-left: $gutter-mobile;
   background-color: #0c0e0e;
-
-  &:before {
-    display: block;
-    content: '';
-    width: 100vw;
-    height: 90vw;
-    margin-right: -$gutter-mobile;
-    margin-left: -$gutter-mobile;
-    background: url('https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-contents.jpg') no-repeat left top;
-    background-size: cover;
-  }
 }
 
 .contents-slide,
@@ -118,11 +107,9 @@ $opacity-faded: .15;
   list-style: none;
 
   &-item {
-    // position: absolute;
     display: none;
     font-size: 25px;
     line-height: 1.2;
-    // visibility: hidden;
 
     &.active {
       display: block;
@@ -143,6 +130,17 @@ $opacity-faded: .15;
 
 
 @include media-breakpoint-down('md') {
+  .section-contents::before {
+    display: block;
+    content: '';
+    width: 100vw;
+    height: 90vw;
+    margin-right: -$gutter-mobile;
+    margin-left: -$gutter-mobile;
+    background: url('https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-contents.jpg') no-repeat left top;
+    background-size: cover;
+  }
+
   .contents-slide {
     display: flex;
     flex-direction: row;
@@ -219,7 +217,7 @@ $opacity-faded: .15;
   }
 
   .supplements-info {
-    min-height: 42vh;
+    // min-height: 42vh;
     padding: $gutter-mobile 0;
   }
 }
@@ -296,6 +294,7 @@ $opacity-faded: .15;
     top: 30%;
     right: 40%;
     white-space: nowrap;
+    font-size: 27px;
 
     .contents-slide.active &,
     .contents-slide.fade-out & {
