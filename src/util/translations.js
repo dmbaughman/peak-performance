@@ -158,15 +158,15 @@ export default {
       ],
       items: {
         patented: [
-          'patented',
+          'Patented',
           ''
         ],
         proprietary: [
-          'proprietary',
+          'Proprietary',
           ''
         ],
         nutritional: [
-          'nutritional',
+          'Nutritional',
           ''
         ]
       }
@@ -181,7 +181,7 @@ export default {
         ''
       ],
       subhead: [
-        'Powerful<br><em>Product</em>',
+        'Powerful<br><em>Pack</em>',
         ''
       ]
     },
