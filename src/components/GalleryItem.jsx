@@ -2,12 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withLocalize, Translate } from 'react-localize-redux'
 
-const GalleryItem = ({ item }) => {
+const GalleryItem = ({ item, activeVideo, loadMore }) => {
   const renderSwitch = (item) => {
     switch (item.type) {
       case 'video':
         return (
-          <img className={`gallery-thumbnail`} src={item.thumbnail} />
+          <div className='gallery-thumbnail-wrap'>
+            <img className='gallery-thumbnail' src={item.videos[activeVideo].thumbnail} />
+            {item.videos[activeVideo].quote &&
+              <div className='gallery-quote'>
+                <blockquote className='gallery-quote-text'>&ldquo;{item.videos[activeVideo].quote}&rdquo;</blockquote>
+                <cite className='gallery-quote-cite'>&ndash;{item.videos[activeVideo].name}</cite>
+              </div>
+            }
+          </div>
         )
       case 'text':
         return (
@@ -19,7 +27,7 @@ const GalleryItem = ({ item }) => {
         )
       case 'button':
         return (
-          <button className='gallery-show-more btn btn-primary' type='button'>
+          <button className='gallery-show-more btn btn-primary' type='button' onClick={loadMore}>
             <Translate id={item.label} />
             <svg className='icon icon-arrow'>
               <use href='#arrow' />

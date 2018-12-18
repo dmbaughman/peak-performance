@@ -96,8 +96,20 @@ export const gallery = [
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/nature',
-      videoId: '',
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/400/225/nature',
+          file: '',
+          quote: 'Wake up feeling energized',
+          name: 'Bunmi'
+        },
+        {
+          thumbnail: 'https://placeimg.com/400/225/arch',
+          file: '',
+          quote: 'Another positive opinion',
+          name: 'Boy Wonder'
+        }
+      ],
       largeScreen: true
     },
     {
@@ -110,16 +122,32 @@ export const gallery = [
     {
       type: 'video',
       size: 'large',
-      thumbnail: 'https://placeimg.com/800/450/nature',
-      videoId: ''
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/800/450/nature',
+          file: ''
+        },
+        {
+          thumbnail: 'https://placeimg.com/800/450/arch',
+          file: ''
+        }
+      ]
     }
   ],
   [
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: ''
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ]
     },
     {
       type: 'button',
@@ -129,28 +157,64 @@ export const gallery = [
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/nature',
-      videoId: '',
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/400/225/nature',
+          file: '',
+          quote: 'Blood work better than 20 years ago',
+          name: 'Barbara Rae'
+        },
+        {
+          thumbnail: 'https://placeimg.com/400/225/arch',
+          file: '',
+          quote: 'This quote is the best',
+          name: 'Some Guy'
+        }
+      ],
       largeScreen: true
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: ''
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ]
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: '',
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: '',
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ],
       largeScreen: true
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: '',
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: '',
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ],
       largeScreen: true
     }
   ],
@@ -158,60 +222,140 @@ export const gallery = [
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: '',
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: '',
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ],
       largeScreen: true
     },
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/nature',
-      videoId: ''
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/400/225/nature',
+          file: '',
+          quote: 'Feel younger and stronger',
+          name: 'Emily Smith'
+        },
+        {
+          thumbnail: 'https://placeimg.com/400/225/arch',
+          file: '',
+          quote: 'Literally do anything',
+          name: 'Bob Hope'
+        }
+      ]
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: ''
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ]
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: ''
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ]
     }
   ],
   [
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: '',
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: '',
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ],
       largeScreen: true
     },
     {
       type: 'video',
       size: 'medium',
-      thumbnail: 'https://placeimg.com/400/225/nature',
-      videoId: ''
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/400/225/nature',
+          file: '',
+          quote: 'Brain fog went away',
+          name: 'Kim Anderson'
+        },
+        {
+          thumbnail: 'https://placeimg.com/400/225/arch',
+          file: '',
+          quote: 'You will receive total consciousness',
+          name: 'Dalai Lama'
+        }
+      ]
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: ''
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ]
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: ''
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: ''
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ]
     },
     {
       type: 'video',
       size: 'small',
-      thumbnail: 'https://placeimg.com/200/112/nature',
-      videoId: '',
+      videos: [
+        {
+          thumbnail: 'https://placeimg.com/200/112/nature',
+          file: '',
+        },
+        {
+          thumbnail: 'https://placeimg.com/200/112/arch',
+          file: ''
+        }
+      ],
       largeScreen: true
     }
   ]
@@ -325,7 +469,8 @@ export const detailsItems = [
     video: {
       playerId: 'intro-video',
       file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
-    }
+    },
+    link: 'http://www.freiburgstudy.com'
   }
 ]
 

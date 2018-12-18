@@ -33,14 +33,27 @@ class Details extends Component {
 
   render () {
     const { showVideo, showChart, videoConfig } = this.state
+    const detailsMoreInfo = (item) => {
+      if (item.link) {
+        return (
+          <a className='details-learn-more-link' href={item.link} target='_blank'>
+            <Translate id={`details.${item.sectionId}.infoLink`} />
+          </a>
+        )
+      } else {
+        return (
+          <button className='details-learn-more-link' onClick={this.toggleChart}>
+            <Translate id={`details.${item.sectionId}.infoLink`} />
+          </button>
+        )
+      }
+    }
     const detailsItem = (item, key) => (
       <div className='details-item' key={key}>
         <div className='details-image-wrap'>
           <img className='details-image' src={item.image.url} alt={item.image.alt} />
           <div className='details-learn-more'>
-            <button className='details-learn-more-link' onClick={this.toggleChart}>
-              <Translate id={`details.${item.sectionId}.infoLink`} />
-            </button>
+            {detailsMoreInfo(item)}
             <img className='details-learn-more-logo' src={item.logo.url} alt={item.logo.alt} />
           </div>
         </div>

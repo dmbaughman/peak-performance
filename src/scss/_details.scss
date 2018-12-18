@@ -8,12 +8,6 @@
   justify-content: stretch;
 }
 
-
-
-
-
-
-
 .details-title {
   margin-bottom: 5px;
   font-size: 16vw;
@@ -36,15 +30,10 @@
   line-height: 1.2;
 }
 
-
-
 .details-image {
   width: 100%;
   height: auto;
 }
-
-
-
 
 .details-learn-more {
   display: flex;
@@ -79,7 +68,7 @@
   }
 
   &-logo {
-    // transform: translateY(-60%);
+    margin: 0 10px;
 
     .details-item:first-child & {
       width: 112px;
@@ -197,6 +186,15 @@
 
     &-logo {
       transform: translateY(-60%);
+
+      .details-item:first-child & {
+        width: 140px;
+      }
+
+      .details-item:last-child & {
+        height: 125px;
+      }
+
     }
   }
 
