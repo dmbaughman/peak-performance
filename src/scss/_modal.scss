@@ -1,0 +1,47 @@
+.modal {
+
+  &-inner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: $zindex-modal;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+
+    @include media-breakpoint-only('md') {
+      width: 70vw;
+    }
+    @include media-breakpoint-up('lg') {
+      width: 60vw;
+    }
+  }
+
+  &-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $zindex-modal-backdrop;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#000, .75);
+  }
+
+  &-close {
+    position: absolute;
+    z-index: 1;
+    top: $gutter-mobile;
+    right: $gutter-mobile;
+    font-size: $font-size-lg;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s opacity ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+

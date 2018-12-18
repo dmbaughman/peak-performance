@@ -1,15 +1,27 @@
-import React, { Component } from 'react';
-import { withLocalize, Translate } from 'react-localize-redux';
-
-// import { } from '../util/config'
+import React, { Component } from 'react'
+import { withLocalize, Translate } from 'react-localize-redux'
+import ReactJWPlayer from 'react-jw-player'
+import Modal from '../components/Modal'
+import { introVideoConfig, jwConfig } from '../util/config'
 
 @withLocalize
 class Intro extends Component {
+  state = {
+    showVideo: false
+  }
+
+  toggleVideo = () => {
+    this.setState({
+      showVideo: !this.state.showVideo
+    })
+  }
+
   render () {
+    const { showVideo } = this.state
     return (
       <section className='section-intro' id='intro'>
         <div className='intro-container container'>
-          <div className='intro-image-wrap'>
+          <div className='intro-image-wrap' onClick={this.toggleVideo}>
             <img className='intro-image' src='http://cdnctus.melaleuca.com/microsites/peak-performance/images/boxes.jpg' />
             <i className='fa fa-play-circle'></i>
           </div>
@@ -22,9 +34,14 @@ class Intro extends Component {
             </p>
           </div>
         </div>
+        {showVideo &&
+          <Modal handleDismiss={this.toggleVideo}>
+            <ReactJWPlayer {...jwConfig} {...introVideoConfig} />
+          </Modal>
+        }
       </section>
     )
   }
 }
 
-export default Intro;
+export default Intro

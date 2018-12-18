@@ -146,7 +146,11 @@ $opacity-faded: .15;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: $gutter-mobile;
-    padding-bottom: $gutter-mobile * 2;
+    padding-bottom: $gutter-mobile;
+
+    &.combined {
+      padding-bottom: $gutter-mobile * 2;
+    }
   }
 
   .contents-title {
@@ -399,7 +403,9 @@ $opacity-faded: .15;
   .contents-image {
     top: 46%;
     right: 18%;
-    max-width: 333px;
+    width: 15vw;
+
+    // max-width: 333px;
   }
 
   .contents-slide.combined.active {
@@ -428,13 +434,14 @@ $opacity-faded: .15;
     bottom: 12%;
     display: flex;
     flex-wrap: wrap;
-    width: 56%;
 
     &-item {
       margin-right: 20px;
       margin-bottom: 20px;
+    }
 
-      &:nth-child(4) {
+    @media (min-width: 1340px) {
+      &-item:nth-child(4) {
         margin-left: auto;
       }
     }
@@ -453,6 +460,13 @@ $opacity-faded: .15;
   }
 }
 
+
+@include media-breakpoint-up('xl') {
+  .supplements-list {
+    width: 56%;
+  }
+
+}
 
 
 

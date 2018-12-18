@@ -82,6 +82,14 @@ export const symptoms = [
   'headaches'
 ]
 
+export const jwConfig = {
+  playerScript: 'https://content.jwplatform.com/libraries/0FZCK9ag.js'
+}
+
+export const introVideoConfig = {
+  playerId: 'intro-video',
+  file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+}
 
 export const gallery = [
   [

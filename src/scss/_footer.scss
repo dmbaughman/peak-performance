@@ -9,8 +9,7 @@
 
 .footer-upper {
   background-color: $primary;
-  padding-top: $grid-gutter-width * 2;
-  padding-bottom: $grid-gutter-width * 2;
+  padding: ($grid-gutter-width * 2) $gutter-mobile;
 }
 
 .footer-title,
@@ -19,17 +18,23 @@
 }
 
 .footer-title {
+  margin-bottom: $gutter-mobile / 2;
   font-size: 50px;
+  line-height: 1;
   color: #fff;
   font-weight: $font-weight-normal;
   text-transform: uppercase;
 }
 
 .footer-lead {
-  font-size: 33px;
+  font-size: 29px;
   font-weight: $font-weight-light;
   line-height: 1;
   color: $gray-darker;
+
+  @include media-breakpoint-up('md') {
+    font-size: 33px;
+  }
 }
 
 //
@@ -37,15 +42,19 @@
 //
 
 .footer-lower {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: ($grid-gutter-width) $gutter-mobile;
   font-size: 14px;
   color: $gray-light;
 }
 
 .footer-contact {
   color: $primary;
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 1;
+
+  @include media-breakpoint-up('lg') {
+    font-size: 25px;
+  }
 }
 
 .footer-disclaimer {
