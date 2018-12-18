@@ -1,26 +1,40 @@
 .modal {
+  z-index: $zindex-modal;
+
+  &,
+  &-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &-open {
+    overflow: hidden;
+
+    & .modal {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+
 
   &-inner {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: $zindex-modal;
-    width: 80vw;
-    transform: translate(-50%, -50%);
+    position: relative;
+    width: 90vw;
+    margin: 5vh auto;
 
     @include media-breakpoint-only('md') {
-      width: 70vw;
+      width: 80vw;
     }
     @include media-breakpoint-up('lg') {
-      width: 60vw;
+      width: 70vw;
     }
   }
 
   &-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: $zindex-modal-backdrop;
+    z-index: -1;
     width: 100vw;
     height: 100vh;
     background-color: rgba(#000, .75);
@@ -29,11 +43,12 @@
   &-close {
     position: absolute;
     z-index: 1;
-    top: $gutter-mobile;
-    right: $gutter-mobile;
-    font-size: $font-size-lg;
+    top: $gutter-mobile / 2;
+    right: $gutter-mobile / 2;
+    font-size: $h3-font-size;
     color: #fff;
-    background: none;
+    background-color: transparent;
+    background-image: radial-gradient(#000 0%, #000 30%, transparent 30%, transparent 100%);
     border: none;
     cursor: pointer;
     opacity: .5;

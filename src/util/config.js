@@ -306,6 +306,10 @@ export const detailsItems = [
     logo: {
       url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/logo-oligo.png',
       alt: ''
+    },
+    video: {
+      playerId: 'intro-video',
+      file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
     }
   },
   {
@@ -317,9 +321,28 @@ export const detailsItems = [
     logo: {
       url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/logo-studies.png',
       alt: ''
+    },
+    video: {
+      playerId: 'intro-video',
+      file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
     }
   }
 ]
+
+export const chart = {
+  logo: {
+    url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/logo-oligo.png',
+    alt: 'Oligo logo'
+  },
+  illustration: {
+    url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/oligo-illustration.jpg',
+    alt: 'Illustration of how Oligo mineral binding improves absorbsion through intestinal wall'
+  },
+  figure: {
+    url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/oligo-chart.jpg',
+    alt: 'Illustration of higher absorbsion rates of Oligo-bound minerals'
+  }
+}
 
 
 export const links = {

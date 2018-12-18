@@ -281,6 +281,24 @@ export default {
         'Learn more about the Freiburg Study',
         ''
       ]
+    },
+    chart: {
+      title: [
+        'Delivers Nutrients Just Like Nature',
+        ''
+      ],
+      lead: [
+        'Only <em>Oligo</em>&reg; binds minerals to proteins and fibers (just like fruits and vegetables).',
+        ''
+      ],
+      description: [
+        'Patented Oligo Technology binds minerals the same way plants do to deliver nutrition that is far more absorbable than non-Oligo forms. This process also helps protect antioxidants by severely limiting free radical activity.',
+        ''
+      ],
+      caption: [
+        'Graphic representation of Dr. William Diehl-Jones\' experiment showing absorption of minerals by live human intestinal cells.',
+        ''
+      ]
     }
   },
   footer: {

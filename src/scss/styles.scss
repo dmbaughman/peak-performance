@@ -7,9 +7,13 @@
 @import 'mixins';
 @import 'global';
 @import 'icons';
-@import 'modal';
 
-// Sections
+// Components
+@import 'modal';
+@import 'chart';
+
+
+// Containers
 @import 'hero';
 @import 'quiz';
 @import 'intro';

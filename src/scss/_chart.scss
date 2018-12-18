@@ -1,0 +1,53 @@
+.chart {
+  background-color: #fff;
+  padding: $gutter-mobile;
+  font-size: 21px;
+  text-align: center;
+
+  @include media-breakpoint-up('md') {
+    padding: ($gutter-mobile * 2) ($gutter-mobile * 3);
+  }
+
+  &-logo {
+    width: 140px;
+    height: auto;
+  }
+
+  &-title {
+    font-size: 43px;
+    font-weight: $font-weight-normal;
+  }
+
+  &-illustration,
+  &-figure-image,
+  &-figure-caption {
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &-illustration {
+    max-width: 450px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  &-description {
+    margin-bottom: $spacer * 2.5;
+  }
+
+  &-figure {
+    &-image,
+    &-caption {
+      max-width: 620px;
+    }
+
+    &-caption {
+      margin-top: $spacer;
+      font-size: $font-size-base;
+      line-height: 1.2;
+      text-align: left;
+    }
+  }
+}

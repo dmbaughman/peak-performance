@@ -434,17 +434,15 @@ $opacity-faded: .15;
     bottom: 12%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 75%;
 
     &-item {
       margin-right: 20px;
       margin-bottom: 20px;
     }
 
-    @media (min-width: 1340px) {
-      &-item:nth-child(4) {
-        margin-left: auto;
-      }
-    }
+
   }
 
   .supplements-info {
@@ -461,17 +459,17 @@ $opacity-faded: .15;
 }
 
 
-@include media-breakpoint-up('xl') {
+
+@media (min-width: 1340px) {
   .supplements-list {
+    justify-content: flex-start;
     width: 56%;
+
+    &-item:nth-child(4) {
+      margin-left: auto;
+    }
   }
-
 }
-
-
-
-
-
 
 
 
