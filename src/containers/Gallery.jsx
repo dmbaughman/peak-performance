@@ -1,10 +1,30 @@
 import React, { Component } from 'react'
+import ReactJWPlayer from 'react-jw-player'
 import GalleryItem from '../components/GalleryItem'
-import { gallery } from '../util/config'
+import Modal from '../components/Modal'
+import { gallery, jwConfig } from '../util/config'
+
 
 class Gallery extends Component {
   state = {
-    activeVideo: 0
+    activeVideo: 0,
+    showVideo: false,
+    videoConfig: {}
+  }
+
+  toggleVideo = () => {
+    this.setState({
+      showVideo: !this.state.showVideo
+    })
+  }
+
+  playVideo = (videoConfig) => {
+    this.setState({
+      videoConfig
+    })
+    if (!this.state.showVideo) {
+      this.toggleVideo()
+    }
   }
 
   loadMore = () => {
@@ -14,18 +34,23 @@ class Gallery extends Component {
   }
 
   render () {
-    const { activeVideo } = this.state
+    const { activeVideo, showVideo, videoConfig } = this.state
     return (
       <section className='section-gallery'>
         <div className='gallery-groups'>
           {gallery.map((group, groupIndex) => (
             <div className={`gallery-group group-${ groupIndex + 1}`} key={ groupIndex }>
               {group.map((item, itemIndex) => (
-                <GalleryItem item={ item } activeVideo={ activeVideo } loadMore={ this.loadMore } key={ itemIndex } />
+                <GalleryItem item={ item } activeVideo={ activeVideo } loadMore={ this.loadMore } playVideo={ this.playVideo } key={ itemIndex } />
               ))}
             </div>
           ))}
         </div>
+        {showVideo &&
+          <Modal handleDismiss={ this.toggleVideo }>
+            <ReactJWPlayer {...jwConfig} {...videoConfig} />
+          </Modal>
+        }
       </section>
     )
   }

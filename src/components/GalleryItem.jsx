@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withLocalize, Translate } from 'react-localize-redux'
 
-const GalleryItem = ({ item, activeVideo, loadMore }) => {
+const GalleryItem = ({ item, activeVideo, loadMore, playVideo }) => {
   const renderSwitch = (item) => {
     switch (item.type) {
       case 'video':
         return (
-          <div className='gallery-thumbnail-wrap'>
+          <div className='gallery-thumbnail-wrap' onClick={() => playVideo(item.videos[activeVideo])}>
             <img className='gallery-thumbnail' src={item.videos[activeVideo].thumbnail} />
             {item.videos[activeVideo].quote &&
               <div className='gallery-quote'>

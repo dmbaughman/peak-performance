@@ -23,7 +23,7 @@
   &-inner {
     position: relative;
     width: 90vw;
-    margin: 5vh auto;
+    margin: 10vh auto;
 
     @include media-breakpoint-only('md') {
       width: 80vw;

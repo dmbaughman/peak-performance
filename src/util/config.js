@@ -83,7 +83,8 @@ export const symptoms = [
 ]
 
 export const jwConfig = {
-  playerScript: 'https://content.jwplatform.com/libraries/0FZCK9ag.js'
+  playerScript: 'https://content.jwplatform.com/libraries/0FZCK9ag.js',
+  playerId: 'jw-player'
 }
 
 export const introVideoConfig = {
@@ -99,13 +100,13 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/400/225/nature',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Wake up feeling energized',
           name: 'Bunmi'
         },
         {
           thumbnail: 'https://placeimg.com/400/225/arch',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Another positive opinion',
           name: 'Boy Wonder'
         }
@@ -125,11 +126,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/800/450/nature',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
           thumbnail: 'https://placeimg.com/800/450/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
     }
@@ -141,11 +142,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
     },
@@ -160,13 +161,13 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/400/225/nature',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Blood work better than 20 years ago',
           name: 'Barbara Rae'
         },
         {
           thumbnail: 'https://placeimg.com/400/225/arch',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'This quote is the best',
           name: 'Some Guy'
         }
@@ -179,11 +180,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
     },
@@ -193,11 +194,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
       largeScreen: true
@@ -208,11 +209,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
       largeScreen: true
@@ -225,11 +226,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
       largeScreen: true
@@ -240,13 +241,13 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/400/225/nature',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Feel younger and stronger',
           name: 'Emily Smith'
         },
         {
           thumbnail: 'https://placeimg.com/400/225/arch',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Literally do anything',
           name: 'Bob Hope'
         }
@@ -258,11 +259,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
     },
@@ -272,11 +273,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
     }
@@ -288,11 +289,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
       largeScreen: true
@@ -303,13 +304,13 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/400/225/nature',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Brain fog went away',
           name: 'Kim Anderson'
         },
         {
           thumbnail: 'https://placeimg.com/400/225/arch',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'You will receive total consciousness',
           name: 'Dalai Lama'
         }
@@ -321,11 +322,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
     },
@@ -335,11 +336,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
     },
@@ -349,11 +350,11 @@ export const gallery = [
       videos: [
         {
           thumbnail: 'https://placeimg.com/200/112/nature',
-          file: '',
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
           thumbnail: 'https://placeimg.com/200/112/arch',
-          file: ''
+          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
       largeScreen: true
@@ -452,8 +453,9 @@ export const detailsItems = [
       alt: ''
     },
     video: {
-      playerId: 'intro-video',
-      file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+      playerId: 'oligo-video',
+      file: 'https://content.jwplatform.com/manifests/iKUyo1Mw.m3u8',
+      image: 'https://content.jwplatform.com/strips/iKUyo1Mw-120.vtt'
     }
   },
   {
@@ -467,8 +469,8 @@ export const detailsItems = [
       alt: ''
     },
     video: {
-      playerId: 'intro-video',
-      file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+      playerId: 'freiburg-video',
+      file: 'https://content.jwplatform.com/manifests/3msXoVOA.m3u8'
     },
     link: 'http://www.freiburgstudy.com'
   }
