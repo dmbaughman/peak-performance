@@ -40,11 +40,11 @@ export const heroSlides = [
   },
   {
     id: 'energy',
-    time: 3
+    time: 3.2
   },
   {
     id: 'health',
-    time: 6.2
+    time: 6.8
   },
   {
     id: 'vitality',
