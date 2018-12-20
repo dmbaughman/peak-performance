@@ -19,15 +19,15 @@ export const heroVideoConfig = {
   sources: [
     {
       type: 'video/webm',
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/city-timelapse.webm'
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/header-video.webm'
     },
     {
       type: 'video/mp4',
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/city-timelapse.mp4'
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/header-video.mp4'
     },
     {
       type: 'video/ogg',
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/city-timelapse.ogv'
+      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/header-video.ogv'
     }
   ],
   poster: ''
@@ -40,37 +40,18 @@ export const heroSlides = [
   },
   {
     id: 'energy',
-    time: 5.1
+    time: 3
   },
   {
     id: 'health',
-    time: 10.3
+    time: 6.2
   },
   {
     id: 'vitality',
-    time: 16
+    time: 12
   }
 ]
 
-
-export const heroPlayer = {
-  sources: [
-    {
-      type: 'video/webm',
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.webm'
-    },
-    {
-      type: 'video/mp4',
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/trail-running.mp4'
-    }
-  ],
-  poster: '',
-  muted: true,
-  loop: true,
-  autoPlay: true,
-  controls: false,
-  'plays-inline': 'true'
-}
 
 export const symptoms = [
   'freeRadicals',
@@ -99,13 +80,13 @@ export const gallery = [
       size: 'medium',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/400/225/nature',
+          image: 'https://placeimg.com/400/225/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Wake up feeling energized',
           name: 'Bunmi'
         },
         {
-          thumbnail: 'https://placeimg.com/400/225/arch',
+          image: 'https://placeimg.com/400/225/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Another positive opinion',
           name: 'Boy Wonder'
@@ -125,12 +106,14 @@ export const gallery = [
       size: 'large',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/800/450/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/Tuox0AIk-720.jpg',
+          file: 'https://content.jwplatform.com/manifests/Tuox0AIk.m3u8',
+          name: 'Tim'
         },
         {
-          thumbnail: 'https://placeimg.com/800/450/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/m38vHMX4-720.jpg',
+          file: 'https://content.jwplatform.com/manifests/m38vHMX4.m3u8',
+          name: 'Karen'
         }
       ]
     }
@@ -141,11 +124,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
@@ -160,13 +143,13 @@ export const gallery = [
       size: 'medium',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/400/225/nature',
+          image: 'https://placeimg.com/400/225/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Blood work better than 20 years ago',
           name: 'Barbara Rae'
         },
         {
-          thumbnail: 'https://placeimg.com/400/225/arch',
+          image: 'https://placeimg.com/400/225/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'This quote is the best',
           name: 'Some Guy'
@@ -179,11 +162,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
@@ -193,11 +176,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
@@ -208,11 +191,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
@@ -225,11 +208,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
@@ -240,13 +223,13 @@ export const gallery = [
       size: 'medium',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/400/225/nature',
+          image: 'https://placeimg.com/400/225/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Feel younger and stronger',
           name: 'Emily Smith'
         },
         {
-          thumbnail: 'https://placeimg.com/400/225/arch',
+          image: 'https://placeimg.com/400/225/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Literally do anything',
           name: 'Bob Hope'
@@ -258,11 +241,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
@@ -272,11 +255,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
@@ -288,11 +271,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
@@ -303,13 +286,13 @@ export const gallery = [
       size: 'medium',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/400/225/nature',
+          image: 'https://placeimg.com/400/225/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'Brain fog went away',
           name: 'Kim Anderson'
         },
         {
-          thumbnail: 'https://placeimg.com/400/225/arch',
+          image: 'https://placeimg.com/400/225/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
           quote: 'You will receive total consciousness',
           name: 'Dalai Lama'
@@ -321,11 +304,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
@@ -335,11 +318,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ]
@@ -349,11 +332,11 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          thumbnail: 'https://placeimg.com/200/112/nature',
+          image: 'https://placeimg.com/200/112/nature',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
         },
         {
-          thumbnail: 'https://placeimg.com/200/112/arch',
+          image: 'https://placeimg.com/200/112/arch',
           file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
         }
       ],
@@ -455,7 +438,7 @@ export const detailsItems = [
     video: {
       playerId: 'oligo-video',
       file: 'https://content.jwplatform.com/manifests/iKUyo1Mw.m3u8',
-      image: 'https://content.jwplatform.com/strips/iKUyo1Mw-120.vtt'
+      image: 'https://cdn.jwplayer.com/thumbs/iKUyo1Mw-720.jpg'
     }
   },
   {
@@ -470,7 +453,8 @@ export const detailsItems = [
     },
     video: {
       playerId: 'freiburg-video',
-      file: 'https://content.jwplatform.com/manifests/3msXoVOA.m3u8'
+      file: 'https://content.jwplatform.com/manifests/3msXoVOA.m3u8',
+      image: 'https://cdn.jwplayer.com/thumbs/3msXoVOA-720.jpg'
     },
     link: 'http://www.freiburgstudy.com'
   }

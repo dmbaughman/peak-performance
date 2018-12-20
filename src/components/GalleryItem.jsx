@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withLocalize, Translate } from 'react-localize-redux'
+import { gallery } from '../util/config'
 
 const GalleryItem = ({ item, activeVideo, loadMore, playVideo }) => {
   const renderSwitch = (item) => {
@@ -8,7 +9,7 @@ const GalleryItem = ({ item, activeVideo, loadMore, playVideo }) => {
       case 'video':
         return (
           <div className='gallery-thumbnail-wrap' onClick={() => playVideo(item.videos[activeVideo])}>
-            <img className='gallery-thumbnail' src={item.videos[activeVideo].thumbnail} />
+            <img className='gallery-thumbnail' src={item.videos[activeVideo].image} />
             {item.videos[activeVideo].quote &&
               <div className='gallery-quote'>
                 <blockquote className='gallery-quote-text'>&ldquo;{item.videos[activeVideo].quote}&rdquo;</blockquote>
@@ -21,7 +22,7 @@ const GalleryItem = ({ item, activeVideo, loadMore, playVideo }) => {
         return (
           <div>
             <h2 className='gallery-title'>
-              <Translate id={item.title} />
+              <Translate id={item.title} data={{name: gallery[1][0].videos[activeVideo].name}} />
             </h2>
           </div>
         )

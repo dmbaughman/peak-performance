@@ -99,7 +99,7 @@ export default {
   },
   gallery: {
     title: [
-      'Add years to your life <br class="hidden-md-down"> and life to your years. <br> <em>Just ask Karen.</em>',
+      'Add years to your life <br class="hidden-md-down"> and life to your years. <br> <em>Just ask ${name}.</em>',
       ''
     ]
   },
