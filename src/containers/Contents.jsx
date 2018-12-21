@@ -96,6 +96,14 @@ class Contents extends Component {
                     <img className='contents-image' src={item.img.url} alt={item.img.altText} />
                   </div>
                 }
+                {item.afterthought &&
+                  <span className={`contents-afterthought ${item.afterthought.largeScreen ? 'hidden-md-down' : ''}`}>
+                    <Translate id={`contents.${item.id}.afterthought`} />
+                  </span>
+                }
+                {item.ribbon &&
+                  <img className='contents-ribbon hidden-md-down' src={item.ribbon} alt='' />
+                }
               </div>
             ))}
             <div className={`contents-supplements ${showSupplements ? 'active' : ''}`}>

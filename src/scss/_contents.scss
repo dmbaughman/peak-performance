@@ -65,6 +65,23 @@ $opacity-faded: .15;
 }
 
 
+.contents-afterthought {
+  display: block;
+  letter-spacing: .3em;
+  color: $gray;
+  text-transform: uppercase;
+
+  @include media-breakpoint-down('md') {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: $gutter-mobile;
+    font-size: 21px;
+    text-align: right;
+  }
+}
+
+
+
 //
 // Supplements list
 //
@@ -137,7 +154,7 @@ $opacity-faded: .15;
     height: 90vw;
     margin-right: -$gutter-mobile;
     margin-left: -$gutter-mobile;
-    background: url('https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-contents.jpg') no-repeat left top;
+    background: url('https://cdnus.melaleuca.com/microsites/peak-performance/images/bg-contents.jpg') no-repeat left top;
     background-size: cover;
   }
 
@@ -230,7 +247,7 @@ $opacity-faded: .15;
 @include media-breakpoint-up('lg') {
   .section-contents {
     padding: $grid-gutter-width;
-    background-image: url('https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-contents.jpg');
+    background-image: url('https://cdnus.melaleuca.com/microsites/peak-performance/images/bg-contents.jpg');
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: left top;
@@ -286,7 +303,9 @@ $opacity-faded: .15;
   .contents-head,
   .contents-subhead,
   .contents-list-item,
-  .contents-image {
+  .contents-image,
+  .contents-afterthought,
+  .contents-ribbon {
     opacity: 0;
 
     .contents-slide.fade-out & {
@@ -356,7 +375,7 @@ $opacity-faded: .15;
     }
 
     .combined & {
-      top: 18.5%;
+      top: 15.5%;
       left: 63%;
       font-size: 85px;
     }
@@ -401,24 +420,50 @@ $opacity-faded: .15;
 
 
   .contents-image {
-    top: 46%;
-    right: 18%;
-    width: 15vw;
-
-    // max-width: 333px;
+    top: 44%;
+    left: 59%;
+    width: 320px;
   }
 
   .contents-slide.combined.active {
     .contents-head,
     .contents-subhead,
-    .contents-image {
+    .contents-image,
+    .contents-afterthought {
       animation: fade-scale-in 3s ease-out 2s both;
     }
   }
 
+  .contents-afterthought {
+    position: absolute;
+    top: 85%;
+    left: 63%;
+    display: block;
+    width: 380px;
+    font-size: 27px;
 
+    .contains.active & {
+      animation: slide-up-in 1s ease 4.5s both;
+    }
 
+    .combined & {
+      left: 60%;
+    }
+  }
 
+  .contents-ribbon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: calc(100% + #{$grid-gutter-width * 2});
+    margin: -$grid-gutter-width 0;
+    transform: translateX(50%);
+
+    .contains.active & {
+      animation: fade-in 2s ease 4.5s both;
+    }
+  }
 
   .contents-supplements {
     opacity: 0;

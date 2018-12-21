@@ -9,7 +9,7 @@
 
 .footer-upper {
   background-color: $primary;
-  padding: ($grid-gutter-width * 2) $gutter-mobile;
+  padding: ($grid-gutter-width * 2) $gutter-mobile $grid-gutter-width;
 }
 
 .footer-title,
@@ -18,8 +18,8 @@
 }
 
 .footer-title {
-  margin-bottom: $gutter-mobile / 2;
-  font-size: 50px;
+  margin-bottom: $gutter-mobile;
+  font-size: 40px;
   line-height: 1;
   color: #fff;
   font-weight: $font-weight-normal;
@@ -27,13 +27,13 @@
 }
 
 .footer-lead {
-  font-size: 29px;
+  font-size: 25px;
   font-weight: $font-weight-light;
   line-height: 1;
   color: $gray-darker;
 
   @include media-breakpoint-up('md') {
-    font-size: 33px;
+    // font-size: 33px;
   }
 }
 
@@ -42,7 +42,7 @@
 //
 
 .footer-lower {
-  padding: ($grid-gutter-width) $gutter-mobile;
+  padding: ($grid-gutter-width * 1.5) $gutter-mobile;
   font-size: 14px;
   color: $gray-light;
 }
@@ -51,6 +51,7 @@
   color: $primary;
   font-size: 22px;
   line-height: 1;
+  margin-bottom: $grid-gutter-width;
 
   @include media-breakpoint-up('lg') {
     font-size: 25px;

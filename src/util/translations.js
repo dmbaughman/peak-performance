@@ -141,7 +141,11 @@ export default {
           'Omega-3s',
           ''
         ]
-      }
+      },
+      afterthought: [
+        'Delivered as nature intended',
+        ''
+      ]
     },
     developed: {
       title: [
@@ -182,6 +186,10 @@ export default {
       ],
       subhead: [
         'Powerful<br><em>Pack</em>',
+        ''
+      ],
+      afterthought: [
+        'Take twice daily',
         ''
       ]
     },
@@ -307,7 +315,7 @@ export default {
       ''
     ],
     lead: [
-      'We are passionate about enhancing lives through advanced nutrition.',
+      '<p>We\'re passionate about proven nutrition, better health, safer products and a clean environment. That\'s why we created the Peak Performance Pack and hundreds of other wellness products that are inspired by nature and proven by science.</p><p>Each month millions of customer shop at our online store for safer products that really work.</p>',
       ''
     ],
     contact: [

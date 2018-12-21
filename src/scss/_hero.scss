@@ -54,11 +54,11 @@ $scroll-width: 75px;
   line-height: 1;
   font-size: 27px;
   font-weight: $font-weight-light;
-  color: #000;
+  color: #fff;
+  text-shadow: 1.3px 1.5px 0 rgba(#000, .8);
 
   @include media-breakpoint-up('lg') {
     font-size: 50px;
-    text-shadow: 1.3px 1.5px 0 rgba(#000, .8);
   }
 }
 
@@ -70,19 +70,19 @@ $scroll-width: 75px;
     width: 0;
     font-size: 25px;
     line-height: 1.75;
-    font-weight: $font-weight-normal;
     color: #000;
     transition: color .2s ease-in-out;
 
     &.active {
       color: #fff;
+      text-shadow: 1.3px 1.5px 0 rgba(#000, .8);
     }
 
     &::before {
       counter-increment: li;
       content: counter(li, decimal-leading-zero);
       margin-right: $grid-gutter-width / 2;
-      font-weight: $font-weight-bold;
+      font-weight: $font-weight-medium;
       letter-spacing: 5px;
       cursor: pointer;
     }
@@ -106,7 +106,7 @@ $scroll-width: 75px;
   }
 
   &-top {
-    @include text-stroke(rgba(#000,.2), #fff, 1px);
+    @include text-stroke(transparent, #fff, 2px);
   }
 
   &-bottom {

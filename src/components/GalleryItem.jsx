@@ -12,7 +12,7 @@ const GalleryItem = ({ item, activeVideo, loadMore, playVideo }) => {
             <img className='gallery-thumbnail' src={item.videos[activeVideo].image} />
             {item.videos[activeVideo].quote &&
               <div className='gallery-quote'>
-                <blockquote className='gallery-quote-text'>&ldquo;{item.videos[activeVideo].quote}&rdquo;</blockquote>
+                <blockquote className='gallery-quote-text'>{item.videos[activeVideo].quote}</blockquote>
                 <cite className='gallery-quote-cite'>&ndash;{item.videos[activeVideo].name}</cite>
               </div>
             }

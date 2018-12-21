@@ -65,7 +65,7 @@ body {
 
 .hidden-md-down {
   @include media-breakpoint-down('md') {
-    display: none;
+    display: none !important;
   }
 }
 

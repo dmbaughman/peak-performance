@@ -19,15 +19,15 @@ export const heroVideoConfig = {
   sources: [
     {
       type: 'video/webm',
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/header-video.webm'
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/videos/header-video.webm'
     },
     {
       type: 'video/mp4',
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/header-video.mp4'
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/videos/header-video.mp4'
     },
     {
       type: 'video/ogg',
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/videos/header-video.ogv'
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/videos/header-video.ogv'
     }
   ],
   poster: ''
@@ -80,16 +80,16 @@ export const gallery = [
       size: 'medium',
       videos: [
         {
-          image: 'https://placeimg.com/400/225/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
-          quote: 'Wake up feeling energized',
-          name: 'Bunmi'
+          image: 'https://cdn.jwplayer.com/thumbs/8OrvT9Qt-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/8OrvT9Qt.m3u8',
+          quote: 'My life is back to me',
+          name: 'Diane Marsh'
         },
         {
-          image: 'https://placeimg.com/400/225/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
-          quote: 'Another positive opinion',
-          name: 'Boy Wonder'
+          image: 'https://cdn.jwplayer.com/thumbs/VcbuPNvD-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/VcbuPNvD.m3u8',
+          quote: 'Energy to enjoy my 5 kids',
+          name: 'Macy Lee'
         }
       ],
       largeScreen: true
@@ -107,12 +107,12 @@ export const gallery = [
       videos: [
         {
           image: 'https://cdn.jwplayer.com/thumbs/Tuox0AIk-720.jpg',
-          file: 'https://content.jwplatform.com/manifests/Tuox0AIk.m3u8',
+          file: 'https://cdn.jwplayer.com/manifests/Tuox0AIk.m3u8',
           name: 'Tim'
         },
         {
           image: 'https://cdn.jwplayer.com/thumbs/m38vHMX4-720.jpg',
-          file: 'https://content.jwplatform.com/manifests/m38vHMX4.m3u8',
+          file: 'https://cdn.jwplayer.com/manifests/m38vHMX4.m3u8',
           name: 'Karen'
         }
       ]
@@ -124,12 +124,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/ZRdf86El-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/ZRdf86El.m3u8'
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/tSLAuljr-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/tSLAuljr.m3u8'
         }
       ]
     },
@@ -143,16 +143,16 @@ export const gallery = [
       size: 'medium',
       videos: [
         {
-          image: 'https://placeimg.com/400/225/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
-          quote: 'Blood work better than 20 years ago',
-          name: 'Barbara Rae'
+          image: 'https://cdn.jwplayer.com/thumbs/zSE8EWBF-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/zSE8EWBF.m3u8',
+          quote: 'I ran a 5K!',
+          name: 'Laura Larson'
         },
         {
-          image: 'https://placeimg.com/400/225/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
-          quote: 'This quote is the best',
-          name: 'Some Guy'
+          image: 'https://cdn.jwplayer.com/thumbs/AHMhhemb-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/AHMhhemb.m3u8',
+          quote: 'Started waking up before the alarm',
+          name: 'Joan Giocondi'
         }
       ],
       largeScreen: true
@@ -162,12 +162,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/XQ6v7UeF-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/XQ6v7UeF.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/jxYywZXV-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/jxYywZXV.m3u8',
         }
       ]
     },
@@ -176,12 +176,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
+          image: 'https://cdn.jwplayer.com/thumbs/7W5oP06V-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/7W5oP06V.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/wWmmjOnv-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/wWmmjOnv.m3u8',
         }
       ],
       largeScreen: true
@@ -191,12 +191,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
+          image: 'https://cdn.jwplayer.com/thumbs/KPqsMFjd-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/KPqsMFjd.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/LJRZgfuG-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/LJRZgfuG.m3u8',
         }
       ],
       largeScreen: true
@@ -208,12 +208,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
+          image: 'https://cdn.jwplayer.com/thumbs/Mutagqfr-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/Mutagqfr.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/wA7wmCIJ-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/wA7wmCIJ.m3u8',
         }
       ],
       largeScreen: true
@@ -223,16 +223,16 @@ export const gallery = [
       size: 'medium',
       videos: [
         {
-          image: 'https://placeimg.com/400/225/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
-          quote: 'Feel younger and stronger',
-          name: 'Emily Smith'
+          image: 'https://cdn.jwplayer.com/thumbs/2OPgIk9q-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/2OPgIk9q.m3u8',
+          quote: 'Brain fog was lifted',
+          name: 'Mandi Varnum'
         },
         {
-          image: 'https://placeimg.com/400/225/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
-          quote: 'Literally do anything',
-          name: 'Bob Hope'
+          image: 'https://cdn.jwplayer.com/thumbs/Y3rclrof-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/Y3rclrof.m3u8',
+          quote: 'Felt like I was in my 20\'s again',
+          name: 'Marybeth Green'
         }
       ]
     },
@@ -241,12 +241,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/cYEOltTq-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/cYEOltTq.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/qLMpEQbS-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/qLMpEQbS.m3u8',
         }
       ]
     },
@@ -255,12 +255,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/ESVd2xaz-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/ESVd2xaz.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/4lfT6jFK-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/4lfT6jFK.m3u8',
         }
       ]
     }
@@ -271,12 +271,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
+          image: 'https://cdn.jwplayer.com/thumbs/02gwROpq-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/02gwROpq.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/9Yk5yw1m-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/9Yk5yw1m.m3u8',
         }
       ],
       largeScreen: true
@@ -286,16 +286,16 @@ export const gallery = [
       size: 'medium',
       videos: [
         {
-          image: 'https://placeimg.com/400/225/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
-          quote: 'Brain fog went away',
-          name: 'Kim Anderson'
+          image: 'https://cdn.jwplayer.com/thumbs/6ySPgmdl-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/6ySPgmdl.m3u8',
+          quote: 'Doing things I never thought I would',
+          name: 'Kerry Buxton'
         },
         {
-          image: 'https://placeimg.com/400/225/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
-          quote: 'You will receive total consciousness',
-          name: 'Dalai Lama'
+          image: 'https://cdn.jwplayer.com/thumbs/J1Yjx2OS-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/J1Yjx2OS.m3u8',
+          quote: 'Blood pressure came down 10 points',
+          name: 'Joe Hetzel'
         }
       ]
     },
@@ -304,12 +304,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/GZ4BKCEU-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/GZ4BKCEU.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/8fJVhiRG-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/8fJVhiRG.m3u8',
         }
       ]
     },
@@ -318,12 +318,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/pQnaBnPk-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/pQnaBnPk.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/jmhJEn8a-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/jmhJEn8a.m3u8',
         }
       ]
     },
@@ -332,12 +332,12 @@ export const gallery = [
       size: 'small',
       videos: [
         {
-          image: 'https://placeimg.com/200/112/nature',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8',
+          image: 'https://cdn.jwplayer.com/thumbs/pi9RRsl1-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/pi9RRsl1.m3u8',
         },
         {
-          image: 'https://placeimg.com/200/112/arch',
-          file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+          image: 'https://cdn.jwplayer.com/thumbs/dRNI4cUF-720.jpg',
+          file: 'https://cdn.jwplayer.com/manifests/dRNI4cUF.m3u8',
         }
       ],
       largeScreen: true
@@ -357,7 +357,11 @@ export const contentsIntro = [
       'botanicals',
       'probiotics',
       'omegas'
-    ]
+    ],
+    afterthought: {
+      largeScreen: true
+    },
+    ribbon: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/circles.png'
   },
   {
     id: 'developed',
@@ -372,8 +376,11 @@ export const contentsIntro = [
     id: 'combined',
     subhead: 'powerfulProduct',
     img: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/packets.png',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/packets.png',
       altText: 'Peak Performance Packets'
+    },
+    afterthought: {
+      largeScreen: false
     }
   }
 ]
@@ -382,42 +389,42 @@ export const supplements = [
   {
     id: 'vitality',
     image: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-vitality.jpg',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/supplements-vitality.jpg',
       alt: 'Vitality Multivitamin & Mineral'
     }
   },
   {
     id: 'cellwise',
     image: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-cellwise.jpg',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/supplements-cellwise.jpg',
       alt: 'Vitality Multivitamin & Mineral'
     }
   },
   {
     id: 'provex',
     image: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-provex.jpg',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/supplements-provex.jpg',
       alt: 'Vitality Multivitamin & Mineral'
     }
   },
   {
     id: 'recover',
     image: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-recover.jpg',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/supplements-recover.jpg',
       alt: 'Vitality Multivitamin & Mineral'
     }
   },
   {
     id: 'cardiomega',
     image: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-cardiomega.jpg',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/supplements-cardiomega.jpg',
       alt: 'Vitality Multivitamin & Mineral'
     }
   },
   {
     id: 'florify',
     image: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/supplements-florify.jpg',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/supplements-florify.jpg',
       alt: 'Vitality Multivitamin & Mineral'
     }
   },
@@ -428,11 +435,11 @@ export const detailsItems = [
   {
     sectionId: 'nature',
     image: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-oligo.jpg',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/bg-oligo.jpg',
       alt: ''
     },
     logo: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/logo-oligo.png',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/logo-oligo.png',
       alt: ''
     },
     video: {
@@ -444,11 +451,11 @@ export const detailsItems = [
   {
     sectionId: 'science',
     image: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/bg-science.jpg',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/bg-science.jpg',
       alt: ''
     },
     logo: {
-      url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/logo-studies.png',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/logo-studies.png',
       alt: ''
     },
     video: {
@@ -462,15 +469,15 @@ export const detailsItems = [
 
 export const chart = {
   logo: {
-    url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/logo-oligo.png',
+    url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/logo-oligo.png',
     alt: 'Oligo logo'
   },
   illustration: {
-    url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/oligo-illustration.jpg',
+    url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/oligo-illustration.jpg',
     alt: 'Illustration of how Oligo mineral binding improves absorbsion through intestinal wall'
   },
   figure: {
-    url: 'https://cdnctus.melaleuca.com/microsites/peak-performance/images/oligo-chart.jpg',
+    url: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/oligo-chart.jpg',
     alt: 'Illustration of higher absorbsion rates of Oligo-bound minerals'
   }
 }
