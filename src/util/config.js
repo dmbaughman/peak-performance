@@ -36,19 +36,23 @@ export const heroVideoConfig = {
 export const heroSlides = [
   {
     id: 'peak',
-    time: 0
+    time: 0,
+    mobileImg: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/bg-hero-packet.jpg'
   },
   {
     id: 'energy',
-    time: 3.2
+    time: 3.2,
+    mobileImg: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/bg-hero-running.jpg'
   },
   {
     id: 'health',
-    time: 6.8
+    time: 6.8,
+    mobileImg: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/bg-hero-health.jpg'
   },
   {
     id: 'vitality',
-    time: 12
+    time: 12,
+    mobileImg: 'https://cdnus.melaleuca.com/microsites/peak-performance/images/bg-hero-vitality.jpg'
   }
 ]
 

@@ -73,6 +73,13 @@ $grid-gap: 20px;
   &.video {
     cursor: pointer;
 
+    filter: grayscale(100%);
+    transition: filter .2s ease;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+
     &::before {
       position: absolute;
       bottom: 1.25vw;
@@ -207,17 +214,10 @@ $grid-gap: 20px;
     //
     // Videos
     &.video {
-      filter: grayscale(100%);
-      transition: filter .2s ease;
-
       &::before {
         width: 25px;
         height: 25px;
         font-size: 25px;
-      }
-
-      &:hover {
-        filter: grayscale(0);
       }
     }
 

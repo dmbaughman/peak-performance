@@ -9,14 +9,13 @@ import { getNewActive } from '../util'
 
 class Hero extends Component {
   state = {
-    stepCount: heroSlides.length,
-    activeStep: 0
+    active: 0
   }
 
   handleStepClick = (index, time) => {
     const videoEl = document.getElementById('js-hero-video');
     this.setState({
-      activeStep: index
+      active: index
     })
     videoEl.currentTime = time;
   }
@@ -25,13 +24,36 @@ class Hero extends Component {
     const { currentTime } = event.target;
     heroSlides.forEach((slide, index) => {
       if (currentTime >= slide.time && currentTime <= slide.time + .25) {
-        this.setState({activeStep: index});
+        this.setState({active: index});
       }
     })
   }
 
+  //
+  // Mobile slide advancement
+  //
+
+  componentDidMount () {
+    if (window.matchMedia('(max-width: 991px)').matches) {
+      this.setState({
+        intervalId: setInterval(this.timer, 4000)
+      })
+    }
+  }
+
+  componentWillUnmount () {
+    if (window.matchMedia('(max-width: 991px)').matches) clearInterval(this.state.intervalId)
+  }
+
+  timer = () => {
+    this.setState({
+      active: getNewActive(this.state.active, heroSlides.length)
+    })
+  }
+
+
   render () {
-    const { stepCount, activeStep } = this.state;
+    const { active } = this.state;
     return (
       <section className='section-hero'>
         <h2 className='hero-tagline'>
@@ -40,10 +62,10 @@ class Hero extends Component {
         <ol className='hero-steps' role='tablist'>
           {heroSlides.map((slide, index) => (
             <li
-              className={`hero-steps-item${index === activeStep ? ' active' : ''}`}
+              className={`hero-steps-item${index === active ? ' active' : ''}`}
               onClick={() => this.handleStepClick(index, slide.time)}
               role='tab'
-              aria-selected={index === activeStep}
+              aria-selected={index === active}
               aria-controls='hero-slide-panel'
               tabIndex={index}
               key={index}></li>
@@ -53,7 +75,10 @@ class Hero extends Component {
         <div className='hero-slide-panel' id='hero-slide-panel'>
           {heroSlides.map((slide, index) => {
             return (
-              <div className={`hero-slide ${index === activeStep ? 'active' : ''}`} key={slide.id}>
+              <div
+                className={`hero-slide ${index === active ? 'active' : ''}`}
+                style={{backgroundImage: `url('${slide.mobileImg}')`}}
+                key={slide.id}>
                 <h1 className='hero-title'>
                   <Translate id={`hero.titles.${slide.id}`} />
                 </h1>

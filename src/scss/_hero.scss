@@ -19,14 +19,21 @@ $scroll-width: 75px;
   top: 0;
   left: 0;
   z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   visibility: hidden;
   opacity: 0;
-  transition: opacity .5s ease,
-              visibility .5s ease;
+  transition: opacity 1s ease,
+              visibility 1s ease;
 
   &.active {
     visibility: visible;
     opacity: 1;
+  }
+
+  @include media-breakpoint-up('lg') {
+    background: none !important;
   }
 }
 
@@ -38,6 +45,10 @@ $scroll-width: 75px;
   object-fit: cover;
   object-position: center;
   overflow: hidden;
+
+  @include media-breakpoint-down('md') {
+    display: none;
+  }
 }
 
 .hero-tagline,
@@ -78,6 +89,11 @@ $scroll-width: 75px;
       text-shadow: 1.3px 1.5px 0 rgba(#000, .8);
     }
 
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
     &::before {
       counter-increment: li;
       content: counter(li, decimal-leading-zero);
@@ -106,7 +122,7 @@ $scroll-width: 75px;
   }
 
   &-top {
-    @include text-stroke(transparent, #fff, 2px);
+    @include text-stroke(transparent, #fff, .01em);
   }
 
   &-bottom {

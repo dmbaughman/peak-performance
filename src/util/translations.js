@@ -61,20 +61,20 @@ export default {
         'Is <em>free radical damage</em> starting to show?',
         ''
       ],
-      tired: [
-        'Are you feeling <em>tired?</em>',
-        ''
-      ],
-      energy: [
-        'Do you <em>run out of energy?</em>',
-        ''
-      ],
       sleep: [
         'Do you have <em>trouble sleeping?</em>',
         ''
       ],
+      tired: [
+        'Are you feeling <em>tired?</em>',
+        ''
+      ],
       joints: [
         'Do your <em>joints ache</em> more than they used to?',
+        ''
+      ],
+      energy: [
+        'Do you <em>run out of energy?</em>',
         ''
       ],
       brain: [
