@@ -60,7 +60,7 @@
 
 .quiz-symptom {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
   visibility: hidden;
   width: 100%;
@@ -84,35 +84,35 @@
 
   &.active {
     animation-name: slidein;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
   }
 
   &.prev {
     animation-name: slideout;
-    transform: translate(-50%, 150%);
+    transform: translate(-50%, 200%);
   }
 }
 
 @keyframes slidein {
   from {
-    transform: translate(-50%, 150%);
+    transform: translate(-50%, 200%);
     opacity: 0;
   }
 
   to {
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     opacity: 1;
   }
 }
 
 @keyframes slideout {
   from {
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     opacity: 1;
   }
 
   to {
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -200%);
     opacity: 0;
   }
 }
