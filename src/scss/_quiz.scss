@@ -25,7 +25,7 @@
 
 .quiz-symptoms {
   height: 18vw;
-  padding: 20px;
+  // padding: 20px;
   margin-bottom: 0;
   font-size: 5.4vw;
   line-height: 1.1;
@@ -37,7 +37,7 @@
 
 
   @include media-breakpoint-up('lg') {
-    height: 30px;
+    height: 1em;
     font-size: 27px;
     line-height: 1;
   }

@@ -62,7 +62,7 @@ export default {
         ''
       ],
       tired: [
-        'Are you feeling <em>more tired</em> than you\'d like?',
+        'Are you feeling <em>tired?</em>',
         ''
       ],
       energy: [
@@ -73,16 +73,16 @@ export default {
         'Do you have <em>trouble sleeping?</em>',
         ''
       ],
-      headaches: [
-        'Do you suffer from <em>frequent headaches?</em>',
-        ''
-      ],
-      anxiety: [
-        'Are you feeling <em>more anxious</em> lately?',
-        ''
-      ],
       joints: [
         'Do your <em>joints ache</em> more than they used to?',
+        ''
+      ],
+      brain: [
+        'Do you feel like you have <em>brain fog?</em>',
+        ''
+      ],
+      heart: [
+        'Are you concerned with <em>poor heart health?</em>',
         ''
       ]
     }

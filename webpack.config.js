@@ -97,10 +97,10 @@ module.exports = env => {
             })
           },
           s3UploadOptions: {
-            Bucket: 'melaleuca-cdn-source-us/production/microsites/peak-performance'
+            Bucket: 'melaleuca-cdn-source-us/content/microsites/peak-performance'
           },
           cdnizerOptions: {
-            defaultCDNBase: 'https://cdnctus.melaleuca.com/microsites/peak-performance'
+            defaultCDNBase: 'https://cdnus.melaleuca.com/microsites/peak-performance'
           }
         })
       ])

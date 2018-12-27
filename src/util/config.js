@@ -59,13 +59,14 @@ export const symptoms = [
   'tired',
   'joints',
   'energy',
-  'anxiety',
-  'headaches'
+  'brain',
+  'heart'
 ]
 
 export const jwConfig = {
   playerScript: 'https://content.jwplatform.com/libraries/0FZCK9ag.js',
-  playerId: 'jw-player'
+  playerId: 'jw-player',
+  isAutoPlay: true
 }
 
 export const introVideoConfig = {
