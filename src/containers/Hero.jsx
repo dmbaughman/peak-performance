@@ -12,14 +12,6 @@ class Hero extends Component {
     active: 0
   }
 
-  handleStepClick = (index, time) => {
-    const videoEl = document.getElementById('js-hero-video');
-    this.setState({
-      active: index
-    })
-    videoEl.currentTime = time;
-  }
-
   handleTimeUpdate = (event) => {
     const { currentTime } = event.target;
     heroSlides.forEach((slide, index) => {
@@ -29,10 +21,19 @@ class Hero extends Component {
     })
   }
 
+  handleStepClick = (index, time) => {
+    const videoEl = document.getElementById('js-hero-video');
+    this.setState({
+      active: index
+    })
+    if (videoEl) {
+      videoEl.currentTime = time;
+    }
+  }
+
   //
   // Mobile slide advancement
   //
-
   componentDidMount () {
     if (window.matchMedia('(max-width: 991px)').matches) {
       this.setState({
