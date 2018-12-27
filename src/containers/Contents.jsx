@@ -22,7 +22,7 @@ class Contents extends Component {
       })
 
       this.setState({
-        intervalId: setInterval(this.slideTimer, 7000)
+        intervalId: setInterval(this.slideTimer, 6000)
       })
     }
   }

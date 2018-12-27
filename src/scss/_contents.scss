@@ -1,4 +1,6 @@
 $opacity-faded: .15;
+$ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 
 .section-contents {
   min-height: 830px;
@@ -287,7 +289,7 @@ $opacity-faded: .15;
     }
 
     &.fade-out {
-      animation: fade-out 1s ease both;
+      animation: fade-out 3s ease both;
     }
   }
 
@@ -345,16 +347,19 @@ $opacity-faded: .15;
     //
     // First slide
     .contains.active & {
-      animation: slide-up-in 1s ease 2s both;
+      animation: slide-up-in 4.1s $ease-out-circ 2s both;
     }
     .contains.fade-out & {
-      // animation: slide-up-out 1s ease;
+      animation: slide-up-out 2s ease forwards;
     }
 
     //
     // Second slide
     .developed.active & {
-      animation: slide-left-in 1s ease 2s both;
+      animation: slide-left-in 4.1s $ease-out-circ 2s both;
+    }
+    .developed.fade-out & {
+      animation: slide-left-out 2s ease forwards;
     }
 
     //
@@ -371,7 +376,10 @@ $opacity-faded: .15;
     line-height: 1.4;
 
     .developed.active & {
-      animation: slide-left-in 1s ease 3.5s both;
+      animation: slide-left-in 4.1s $ease-out-circ 3.5s both;
+    }
+    .developed.fade-out & {
+      animation: slide-left-out 2s ease forwards;
     }
 
     .combined & {
@@ -392,10 +400,7 @@ $opacity-faded: .15;
 
     &-item {
       .contains.active & {
-        animation: slide-up-in 1s ease both;
-      }
-      .contains.fade-out & {
-        // animation: slide-up-out 1s ease forwards;
+        animation: slide-up-in 4.1s $ease-out-circ both;
       }
       .contains & {
         @for $i from 1 through 12 {
@@ -404,16 +409,22 @@ $opacity-faded: .15;
           }
         }
       }
+      .contains.fade-out & {
+        animation: slide-up-out 2s ease forwards;
+      }
 
       .developed.active & {
 
-        animation: slide-left-in 1s ease 2s both;
+        animation: slide-left-in 4.1s $ease-out-circ 2s both;
 
         @for $i from 1 through 12 {
           &:nth-child(#{$i}n) {
             animation-delay: #{2.5 + $i * 0.25}s;
           }
         }
+      }
+      .developed.fade-out & {
+        animation: slide-left-out 2s ease both;
       }
     }
   }
@@ -430,7 +441,18 @@ $opacity-faded: .15;
     .contents-subhead,
     .contents-image,
     .contents-afterthought {
-      animation: fade-scale-in 3s ease-out 2s both;
+    }
+  }
+
+  .contents-head,
+  .contents-subhead,
+  .contents-image,
+  .contents-afterthought {
+    .contents-slide.combined.active & {
+      animation: fade-scale-in 4.1s $ease-out-circ 2s both;
+    }
+    .contents-slide.combined.fade-out & {
+      animation: fade-out 2s ease forwards;
     }
   }
 
@@ -443,7 +465,10 @@ $opacity-faded: .15;
     font-size: 27px;
 
     .contains.active & {
-      animation: slide-up-in 1s ease 4.5s both;
+      animation: slide-up-in 4.1s $ease-out-circ 4.5s both;
+    }
+    .contains.fade-out & {
+      animation: slide-up-out 2s ease forwards;
     }
 
     .combined & {
@@ -553,9 +578,11 @@ $opacity-faded: .15;
 @keyframes slide-up-out {
   0% {
     transform: translateY(0);
+    opacity: 1;
   }
   100% {
     transform: translateY(-100%);
+    opacity: 0;
   }
 }
 
@@ -571,7 +598,14 @@ $opacity-faded: .15;
 }
 
 @keyframes slide-left-out {
-  // TODO
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes fade-scale-in {
@@ -582,6 +616,17 @@ $opacity-faded: .15;
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes fade-scale-out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
   }
 }
 
