@@ -1,7 +1,7 @@
 module.exports = {
   parser: 'postcss-syntax',
   plugins: {
-    // 'stylelint': {},
+    'autoprefixer': {browsers: 'defaults, ie > 9'},
     'postcss-import': {},
     'postcss-preset-env': {},
     'cssnano': {},

@@ -3,10 +3,19 @@ $ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
 $ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 
 .section-contents {
-  min-height: 830px;
   padding-right: $gutter-mobile;
   padding-left: $gutter-mobile;
   background-color: #0c0e0e;
+
+  &,
+  .container {
+    min-height: 830px;
+  }
+}
+
+.contents-visibility-sensor {
+  width: 1px;
+  height: 1px;
 }
 
 .contents-slide,
