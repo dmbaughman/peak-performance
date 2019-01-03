@@ -105,163 +105,275 @@ $grid-gap: 20px;
 
 
 //
-// Phone/Tablet screen layout
+// IE11 Fallbacks
 //
 
-@include media-breakpoint-down('md') {
-  // .gallery-groups {
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr;
+.gallery-groups {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @extend .container;
+}
+
+.gallery-group {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  &.group-1 {
+    // flex-basis: 100%;
+    flex-direction: row-reverse;
+
+    br {
+      display: none;
+    }
+    .gallery-item {
+      // flex-basis: 100%;
+
+      &.text {
+        flex-basis: 100%;
+      }
+
+      &.video {
+        flex-basis: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+  }
+
+  // &.group-2 {
+  //   order: -1;
   // }
 
-  .gallery-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: $grid-gap;
-    margin-bottom: $grid-gap;
+  &.group-3,
+  &.group-4,
+  &.group-5 {
+    flex-basis: 100%;
   }
 
-  .group-1 {
-    .gallery-item.video {
-      display: none;
-    }
-  }
+}
 
-  .group-2 {
-    order: 1;
-  }
+.gallery-item {
+  flex: 1 0 12%;
+  margin: 0 $grid-gap $grid-gap 0;
 
-  .gallery-item {
-    &.medium,
-    &.large,
-    &.text {
-      grid-column: 1 / span 2;
-    }
+  // .group-3 & {
+  //   flex-basis: 20%;
+  // }
 
-    &.button {
-      display: none;
-    }
-  }
-
-  .gallery-title {
-    font-size: 9vw;
-    line-height: 1.2
+  &.button {
+    order: 10;
   }
 }
 
 
-
-//
-// Large screen layout
-//
-
-@include media-breakpoint-up('lg') {
-  .section-gallery {
-    padding: 25px;
-  }
-
+@supports (display: grid) {
+  //
+  // Unset non-grid fallbacks
+  //
   .gallery-groups {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas:
-      'a b b'
-      'a c d'
-      'e e d';
-    width: 100%;
-    height: 56vw;
+    display: unset;
+    max-width: unset;
   }
 
   .gallery-group {
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-  }
+    flex-basis: unset;
+    display: unset;
+    flex-direction: unset;
+    flex-wrap: unset;
+    align-items: unset;
 
+    &.group-1 {
+      flex-direction: row;
 
-  .group-1 {
-    grid-area: b;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
+      br {
+        display: static;
+      }
+      .video {
+        display: flex;
+      }
+    }
 
-  .group-2 {
-    grid-area: c;
-  }
+    &.group-2 {
+      order: unset;
+    }
 
-  .group-3 {
-    grid-area: d;
-    align-content: flex-start;
-  }
+    &.group-3,
+    &.group-4,
+    &.group-5 {
+      flex-basis: unset;
+    }
 
-  .group-4 {
-    grid-area: e;
-    flex-flow: row-reverse nowrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-  }
-
-  .group-5 {
-    grid-area: a;
-    flex-wrap: wrap-reverse;
-    align-content: flex-start;
-    justify-content: flex-end;
   }
 
   .gallery-item {
-    padding: $grid-gap / 2;
+    flex: unset;
+    margin: unset;
 
-    //
-    // Videos
-    &.video {
-      &::before {
-        width: 25px;
-        height: 25px;
-        font-size: 25px;
-      }
-    }
-
-
-    &.video:hover::before {
-      opacity: 1;
-    }
-
-    //
-    // Button
     &.button {
-      position: absolute;
-      top: 0;
-      right: -$grid-gutter-width;
+      order: unset;
+    }
+  }
+
+
+
+  //
+  // Phone/Tablet screen layout
+  //
+  @include media-breakpoint-down('md') {
+    .gallery-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: $grid-gap;
     }
 
-    //
-    // Size variations
-    &.small {
-      flex-basis: 50%;
-
-      .group-4 & {
-        flex-basis: percentage((1/8) / (3/4));
-        height: 50%;
+    .group-1 {
+      .gallery-item.video {
+        display: none;
       }
     }
 
-    &.medium {
-      flex-basis: 100%;
+    .group-2 {
+      order: 1;
+    }
 
-      .group-1 &,
-      .group-4 & {
-        flex-basis: percentage((1/4) / (3/4));
+    .gallery-item {
+      &.medium,
+      &.large,
+      &.text {
+        grid-column: 1 / span 2;
+      }
+
+      &.button {
+        display: none;
+      }
+    }
+
+    .gallery-title {
+      font-size: 9vw;
+      line-height: 1.2
+    }
+  }
+
+
+
+  //
+  // Large screen layout
+  //
+
+  @include media-breakpoint-up('lg') {
+    .section-gallery {
+      padding: 25px;
+    }
+
+    .gallery-groups {
+      @supports (display: grid) {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas:
+          'a b b'
+          'a c d'
+          'e e d';
+        width: 100%;
+        height: 56vw;
+      }
+    }
+
+    .gallery-group {
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+
+    .group-1 {
+      grid-area: b;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+
+    .group-2 {
+      grid-area: c;
+    }
+
+    .group-3 {
+      grid-area: d;
+      align-content: flex-start;
+    }
+
+    .group-4 {
+      grid-area: e;
+      flex-flow: row-reverse nowrap;
+      align-content: flex-start;
+      justify-content: flex-start;
+    }
+
+    .group-5 {
+      grid-area: a;
+      flex-wrap: wrap-reverse;
+      align-content: flex-start;
+      justify-content: flex-end;
+    }
+
+    .gallery-item {
+      padding: $grid-gap / 2;
+
+      //
+      // Videos
+      &.video {
+        &::before {
+          width: 25px;
+          height: 25px;
+          font-size: 25px;
+        }
+      }
+
+
+      &.video:hover::before {
+        opacity: 1;
+      }
+
+      //
+      // Button
+      &.button {
+        position: absolute;
+        top: 0;
+        right: -$grid-gutter-width;
+      }
+
+      //
+      // Size variations
+      &.small {
+        flex-basis: 50%;
+
+        .group-4 & {
+          flex-basis: percentage((1/8) / (3/4));
+          height: 50%;
+        }
+      }
+
+      &.medium {
+        flex-basis: 100%;
+
+        .group-1 &,
+        .group-4 & {
+          flex-basis: percentage((1/4) / (3/4));
+          height: 100%;
+        }
+      }
+
+      &.large {
+        width: 100%;
         height: 100%;
       }
     }
-
-    &.large {
-      width: 100%;
-      height: 100%;
-    }
   }
 }
-
 
 
 

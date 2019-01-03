@@ -50,7 +50,7 @@ export default {
         ''
       ],
       vitality: [
-        '<span class="hero-title-top">Extra</span><span class="hero-title-bottom">Vitality</span>',
+        '<span class="hero-title-top">More</span><span class="hero-title-bottom">Vitality</span>',
         ''
       ]
     }

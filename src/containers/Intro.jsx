@@ -23,7 +23,7 @@ class Intro extends Component {
         <div className='intro-container container'>
           <div className='intro-image-wrap' onClick={this.toggleVideo}>
             <img className='intro-image' src='http://cdnus.melaleuca.com/microsites/peak-performance/images/boxes.jpg' />
-            {/*<i className='fa fa-play-circle'></i>*/}
+            <i className='fa fa-play-circle'></i>
           </div>
           <div className='intro-copy'>
             <h2 className='intro-title'>
@@ -34,11 +34,11 @@ class Intro extends Component {
             </p>
           </div>
         </div>
-        {/*showVideo &&
+        {showVideo &&
           <Modal handleDismiss={this.toggleVideo}>
             <ReactJWPlayer {...jwConfig} {...introVideoConfig} />
           </Modal>
-        */}
+        }
       </section>
     )
   }

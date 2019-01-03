@@ -22,12 +22,12 @@ export const heroVideoConfig = {
       url: 'https://cdnus.melaleuca.com/microsites/peak-performance/videos/header-video.webm'
     },
     {
-      type: 'video/mp4',
-      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/videos/header-video.mp4'
-    },
-    {
       type: 'video/ogg',
       url: 'https://cdnus.melaleuca.com/microsites/peak-performance/videos/header-video.ogv'
+    },
+    {
+      type: 'video/mp4',
+      url: 'https://cdnus.melaleuca.com/microsites/peak-performance/videos/header-video.mp4'
     }
   ],
   poster: ''
@@ -75,7 +75,7 @@ export const jwConfig = {
 
 export const introVideoConfig = {
   playerId: 'intro-video',
-  file: 'https://content.jwplatform.com/manifests/QtU5H0S0.m3u8'
+  file: 'https://content.jwplatform.com/manifests/Nc9aCZXj.m3u8'
 }
 
 export const gallery = [

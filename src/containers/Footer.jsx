@@ -7,17 +7,21 @@ import LanguageToggle from '../components/LanguageToggle'
 const Footer = () => (
   <footer className='footer'>
     <div className='footer-upper'>
-      <h2 className='footer-title'>
-        <Translate id='footer.title' />
-      </h2>
-      <p className='footer-lead'>
-        <Translate id='footer.lead' />
-      </p>
+      <div className='container'>
+        <h2 className='footer-title'>
+          <Translate id='footer.title' />
+        </h2>
+        <p className='footer-lead'>
+          <Translate id='footer.lead' />
+        </p>
+      </div>
     </div>
     <div className='footer-lower'>
-      <p className='footer-contact'>
-        <Translate id='footer.contact' />
-      </p>
+      <div className='container'>
+        <p className='footer-contact'>
+          <Translate id='footer.contact' />
+        </p>
+      </div>
       <p className='footer-disclaimer'>
         <Translate id='footer.disclaimer' />
       </p>
