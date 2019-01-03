@@ -129,19 +129,15 @@ $grid-gap: 20px;
     br {
       display: none;
     }
-    .gallery-item {
-      // flex-basis: 100%;
+    .text {
+      flex-basis: 100%;
+    }
 
-      &.text {
-        flex-basis: 100%;
-      }
-
-      &.video {
-        flex-basis: 0;
-        width: 0;
-        height: 0;
-        overflow: hidden;
-      }
+    .video {
+      flex-basis: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
     }
   }
 
@@ -191,10 +187,18 @@ $grid-gap: 20px;
       flex-direction: row;
 
       br {
-        display: static;
+        display: block;
       }
+
       .video {
-        display: flex;
+        flex-basis: auto;
+        width: auto;
+        height: auto;
+        overflow: unset;
+      }
+
+      .text {
+        flex-basis: auto;
       }
     }
 
