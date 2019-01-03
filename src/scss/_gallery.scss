@@ -233,6 +233,7 @@ $grid-gap: 20px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: $grid-gap;
+      margin-bottom: $grid-gap;
     }
 
     .group-1 {

@@ -4,7 +4,10 @@ $scroll-width: 75px;
 .hero-slide,
 .hero-video {
   width: 100vw;
-  height: 100vh;
+  height: 9 / 16 * 100vw;
+  @supports (object-fit: cover) {
+    height: 100vh;
+  }
 }
 
 .section-hero {

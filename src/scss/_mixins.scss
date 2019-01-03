@@ -2,16 +2,16 @@
 // Text outline
 //
 @mixin text-stroke($fill-color, $stroke-color, $stroke-width) {
-  color: $fill-color;
-  text-shadow: -$stroke-width -$stroke-width 0 $stroke-color,
-                $stroke-width -$stroke-width 0 $stroke-color,
-               -$stroke-width  $stroke-width 0 $stroke-color,
-                $stroke-width  $stroke-width 0 $stroke-color;
+  color: $stroke-color;
+  // text-shadow: -$stroke-width -$stroke-width 0 $stroke-color,
+  //               $stroke-width -$stroke-width 0 $stroke-color,
+  //              -$stroke-width  $stroke-width 0 $stroke-color,
+  //               $stroke-width  $stroke-width 0 $stroke-color;
 
   @supports ((-webkit-text-stroke-color: $stroke-color) and (-webkit-text-fill-color: white))
             or ((-moz-text-stroke-color: $stroke-color) and (-moz-text-fill-color: white)) {
                         color: unset;
-                  text-shadow: unset;
+                  // text-shadow: unset;
          -moz-text-fill-color: $fill-color;
       -webkit-text-fill-color: $fill-color;
        -moz-text-stroke-color: $stroke-color;

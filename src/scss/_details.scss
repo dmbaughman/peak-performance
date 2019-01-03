@@ -162,6 +162,11 @@
     }
   }
 
+  .details-title,
+  .details-description {
+    max-width: 100%;
+  }
+
   .details-title {
     font-size: 112px;
   }
