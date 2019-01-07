@@ -16,12 +16,9 @@ class Contents extends Component {
 
 
   handleVisibility = (isVisible) => {
-    if (isVisible) {
+    if (isVisible && !this.state.isVisible) {
       this.setState({
-        isVisible: true
-      })
-
-      this.setState({
+        isVisible: true,
         intervalId: setInterval(this.slideTimer, 6000)
       })
     }

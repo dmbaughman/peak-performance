@@ -81,6 +81,7 @@
   font-weight: $font-weight-thin;
 
   @include media-breakpoint-up('lg') {
+    max-width: 10em;
     font-size: 50px;
   }
 

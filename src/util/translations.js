@@ -315,7 +315,7 @@ export default {
       ''
     ],
     lead: [
-      '<p>We\'re passionate about proven nutrition, better health, safer products and a clean environment. That\'s why we created the Peak Performance Pack and hundreds of other wellness products that are inspired by nature and proven by science.</p><p>Each month millions of customer shop at our online store for safer products that really work.</p>',
+      '<p>We\'re passionate about proven nutrition, better health, safer products and a clean environment. That\'s why we created the Peak Performance Pack and hundreds of other wellness products that are inspired by nature and proven by science.</p><p>Each month millions of customers shop at our online store for safer products that really work.</p>',
       ''
     ],
     contact: [
@@ -327,7 +327,7 @@ export default {
       ''
     ],
     copyright: [
-      '&copy; Copyright ${year} Melaleuca, Inc.  All Rights Reserved.',
+      '&copy; Copyright ${year} PeakPerformancePack.com.  All Rights Reserved.',
       ''
     ]
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Translate } from 'react-localize-redux'
+import VisibilitySensor from 'react-visibility-sensor'
 import { symptoms } from '../util/config'
 import { getNewActive } from '../util'
 
@@ -10,10 +11,14 @@ class Quiz extends Component {
     intervalId: null
   }
 
-  componentDidMount () {
-    this.setState({
-      intervalId: setInterval(this.timer, 3000)
-    })
+  handleVisibility = (isVisible) => {
+    if (isVisible) {
+      this.setState({
+        intervalId: setInterval(this.timer, 3000)
+      })
+    } else {
+      clearInterval(this.state.intervalId)
+    }
   }
 
   componentWillUnmount () {
@@ -46,6 +51,7 @@ class Quiz extends Component {
     const { symptoms } = this.state
     return (
       <section className='section-quiz'>
+        <VisibilitySensor onChange={this.handleVisibility}>
         <div className='quiz-inner'>
           <ol className='quiz-symptoms'>
             {symptoms.map((symptom, index) => (
@@ -62,6 +68,7 @@ class Quiz extends Component {
             ))}
           </ol>
         </div>
+        </VisibilitySensor>
       </section>
     )
   }

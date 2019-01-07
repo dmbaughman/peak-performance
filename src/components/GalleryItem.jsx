@@ -10,6 +10,7 @@ const GalleryItem = ({ item, activeVideo, loadMore, playVideo }) => {
         return (
           <div className='gallery-thumbnail-wrap' onClick={() => playVideo(item.videos[activeVideo])}>
             <img className='gallery-thumbnail' src={item.videos[activeVideo].image} />
+            <i className='gallery-play-icon fa fa-play-circle'></i>
             {item.videos[activeVideo].quote &&
               <div className='gallery-quote'>
                 <blockquote className='gallery-quote-text'>{item.videos[activeVideo].quote}</blockquote>

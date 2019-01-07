@@ -35,6 +35,16 @@ $grid-gap: 20px;
   padding: $spacer;
   text-align: center;
   color: #fff;
+  background-color: rgba(#000, .6);
+
+  @supports (filter: blur()) {
+    background-color: transparent;
+  }
+
+  &-text,
+  &-cite {
+    max-width: 100%;
+  }
 
   &-text {
     margin-bottom: $spacer / 2;
@@ -80,26 +90,28 @@ $grid-gap: 20px;
       filter: grayscale(0);
     }
 
-    &::before {
-      position: absolute;
-      bottom: 1.25vw;
-      right: 1.25vw;
-      z-index: 1;
-      display: block;
-      width: 37px;
-      height: 37px;
-      padding: 0;
-      content: '\f144';
-      font-family: $font-awesome;
-      font-size: 37px;
-      line-height: 1;
-      color: #000;
-      text-align: center;
-      background: radial-gradient(#fff 0%, #fff 50%, #000 50%, #000 100%);
-      border-radius: 50%;
-      opacity: .5;
-      transition: opacity .2s ease;
-    }
+
+  }
+
+  .gallery-play-icon {
+    position: absolute;
+    bottom: 1.25vw;
+    right: 1.25vw;
+    z-index: 1;
+    display: block;
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    content: '\f144';
+    font-family: $font-awesome;
+    font-size: 37px;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    background: radial-gradient(#fff 0%, #fff 50%, #000 50%, #000 100%);
+    border-radius: 50%;
+    opacity: .5;
+    transition: opacity .2s ease;
   }
 }
 
@@ -330,16 +342,14 @@ $grid-gap: 20px;
 
       //
       // Videos
-      &.video {
-        &::before {
-          width: 25px;
-          height: 25px;
-          font-size: 25px;
-        }
+      .gallery-play-icon {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
       }
 
 
-      &.video:hover::before {
+      &.video:hover .gallery-play-icon {
         opacity: 1;
       }
 
