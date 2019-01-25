@@ -28,7 +28,7 @@ const Footer = () => (
       <p className='footer-copyright'>
         <Translate id='footer.copyright' data={{ year: new Date().getFullYear() }} />
       </p>
-      {/*<LanguageToggle />*/}
+      <LanguageToggle />
     </div>
   </footer>
 )

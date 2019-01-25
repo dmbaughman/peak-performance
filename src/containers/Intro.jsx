@@ -22,7 +22,7 @@ class Intro extends Component {
       <section className='section-intro' id='intro'>
         <div className='intro-container container'>
           <div className='intro-image-wrap' onClick={this.toggleVideo}>
-            <img className='intro-image' src='http://cdnus.melaleuca.com/microsites/peak-performance/images/boxes.jpg' />
+            <img className='intro-image' src='https://cdnus.melaleuca.com/microsites/peak-performance/images/boxes.jpg' />
             <i className='fa fa-play-circle'></i>
           </div>
           <div className='intro-copy'>
