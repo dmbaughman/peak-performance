@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import { withLocalize } from 'react-localize-redux'
 
 class LanguageToggle extends Component {
@@ -6,15 +7,20 @@ class LanguageToggle extends Component {
     langCode: ''
   }
 
+  componentDidUpdate() {
+    const { activeLanguage } = this.props
+    if (activeLanguage && activeLanguage.code !== this.state.langCode) {
+      this.setState({ langCode: activeLanguage.code })
+    }
+  }
+
   chooseLanguage = (event) => {
-    this.setState({
-      langCode: event.target.value
-    })
     this.props.setActiveLanguage(event.target.value)
+    this.props.history.push(`/${event.target.value}`)
   }
 
   render () {
-    const { languages, activeLanguage, setActiveLanguage } = this.props;
+    const { languages, activeLanguage } = this.props;
     return (
       <div className='custom-select language-toggle'>
         <select value={this.state.langCode} onChange={this.chooseLanguage}>
@@ -27,4 +33,4 @@ class LanguageToggle extends Component {
   }
 }
 
-export default withLocalize(LanguageToggle)
+export default withRouter(withLocalize(LanguageToggle))

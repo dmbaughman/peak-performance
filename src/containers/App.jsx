@@ -1,47 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { withLocalize } from 'react-localize-redux'
-import { renderToStaticMarkup } from 'react-dom/server'
-
-import translations from '../util/translations'
-import { languages } from '../util/config'
-
-import IconSprite from '../components/IconSprite'
-import Hero from './Hero'
-import Quiz from './Quiz'
-import Intro from './Intro'
-import Gallery from './Gallery'
-import Contents from './Contents'
-import Details from './Details'
-import Footer from './Footer'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import Page from './Page'
 
 class App extends Component {
-  componentDidMount () {
-    this.props.initialize({
-      languages: languages,
-      translation: translations,
-      options: { renderToStaticMarkup, renderInnerHtml: true }
-    })
-  }
-
   render () {
     return (
-      <main>
-        <IconSprite />
-        <Hero />
-        <Quiz />
-        <Intro />
-        <Gallery />
-        <Contents />
-        <Details />
-        <Footer />
-      </main>
+      <Router>
+        <Switch>
+          <Route path='/' exact render={() => <Redirect to='/en' />} />
+          <Route path='/:lang' component={Page} />
+        </Switch>
+      </Router>
     )
   }
 }
 
-App.propTypes = {
-  initialize: PropTypes.func.isRequired
-}
-
-export default withLocalize(App)
+export default App
