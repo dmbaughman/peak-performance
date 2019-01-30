@@ -11,10 +11,10 @@ const S3Plugin = require('webpack-s3-plugin');
 const AWS = require('aws-sdk');
 
 const PATHS = {
-  SRC: path.resolve(__dirname, 'src'),
-  APP:  path.resolve(__dirname, 'src/index.jsx'),
-  SCSS: path.resolve(__dirname, 'src/scss/styles.scss'),
-  DIST: path.resolve(__dirname, 'dist'),
+  SRC: path.join(__dirname, 'src'),
+  APP:  path.join(__dirname, 'src/index.jsx'),
+  SCSS: path.join(__dirname, 'src/scss/styles.scss'),
+  DIST: path.join(__dirname, 'dist'),
   NODE_MODULES: /node_modules/,
   CLEAN: [ 'dist' ]
 }
@@ -76,6 +76,7 @@ module.exports = env => {
       devtool: 'source-map',
       devServer: {
         contentBase: PATHS.DIST,
+        publicPath: '/',
         historyApiFallback: true,
         hot: true,
         host: '0.0.0.0'

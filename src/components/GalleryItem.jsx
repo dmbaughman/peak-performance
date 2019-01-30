@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withLocalize, Translate } from 'react-localize-redux'
 import { gallery } from '../util/config'
+import Icon from './Icon'
 
 const GalleryItem = ({ item, activeVideo, loadMore, playVideo }) => {
   const renderSwitch = (item) => {
@@ -31,9 +32,7 @@ const GalleryItem = ({ item, activeVideo, loadMore, playVideo }) => {
         return (
           <button className='gallery-show-more btn btn-primary' type='button' onClick={loadMore}>
             <Translate id={item.label} />
-            <svg className='icon icon-arrow'>
-              <use href='#arrow' />
-            </svg>
+            <Icon id='arrow' />
           </button>
         )
       default:

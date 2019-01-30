@@ -54,12 +54,11 @@ body {
   border: none;
   border-radius: 0;
   box-shadow: none;
+}
 
-
-  &.btn-primary {
-    color: #fff;
-    background-color: $primary;
-  }
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
 }
 
 

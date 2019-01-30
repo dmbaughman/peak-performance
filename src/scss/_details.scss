@@ -22,6 +22,13 @@
     width: 100%;
     letter-spacing: .25em;
   }
+
+  :lang(es) & {
+    font-size: 14vw;
+    em {
+      letter-spacing: 0;
+    }
+  }
 }
 
 .details-description {
@@ -169,6 +176,10 @@
 
   .details-title {
     font-size: 112px;
+
+    :lang(es) & {
+      font-size: 80px;
+    }
   }
 
 

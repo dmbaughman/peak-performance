@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import ReactJWPlayer from 'react-jw-player'
 import GalleryItem from '../components/GalleryItem'
 import Modal from '../components/Modal'
@@ -35,25 +36,29 @@ class Gallery extends Component {
 
   render () {
     const { activeVideo, showVideo, videoConfig } = this.state
-    return (
-      <section className='section-gallery'>
-        <div className='gallery-groups'>
-          {gallery.map((group, groupIndex) => (
-            <div className={`gallery-group group-${ groupIndex + 1}`} key={ groupIndex }>
-              {group.map((item, itemIndex) => (
-                <GalleryItem item={ item } activeVideo={ activeVideo } loadMore={ this.loadMore } playVideo={ this.playVideo } key={ itemIndex } />
-              ))}
-            </div>
-          ))}
-        </div>
-        {showVideo &&
-          <Modal handleDismiss={ this.toggleVideo }>
-            <ReactJWPlayer {...jwConfig} {...videoConfig} />
-          </Modal>
-        }
-      </section>
-    )
+    const { lang } = this.props.match.params
+    if (lang === 'en') {
+      return (
+        <section className='section-gallery'>
+          <div className='gallery-groups'>
+            {gallery.map((group, groupIndex) => (
+              <div className={`gallery-group group-${ groupIndex + 1}`} key={ groupIndex }>
+                {group.map((item, itemIndex) => (
+                  <GalleryItem item={ item } activeVideo={ activeVideo } loadMore={ this.loadMore } playVideo={ this.playVideo } key={ itemIndex } />
+                ))}
+              </div>
+            ))}
+          </div>
+          {showVideo &&
+            <Modal handleDismiss={ this.toggleVideo }>
+              <ReactJWPlayer {...jwConfig} {...videoConfig} />
+            </Modal>
+          }
+        </section>
+      )
+    }
+    return null
   }
 }
 
-export default Gallery
+export default withRouter(Gallery)

@@ -1,0 +1,69 @@
+.aux-page {
+  .container {
+    max-width: 1280px;
+    padding-right: $grid-gutter-width;
+    padding-left: $grid-gutter-width;
+  }
+
+  &-contents {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    h1 {
+      font-size: 3.125rem;
+    }
+
+    h2 {
+      font-size: 2.625rem;
+    }
+
+    p {
+      font-size: $font-size-lg;
+      font-weight: $font-weight-light;
+
+      strong {
+        font-weight: $font-weight-medium;
+      }
+
+      + h1,
+      + h2 {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+//
+// Header
+
+.aux-header {
+  background-color: $primary;
+  color: #fff;
+
+  &-title {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    margin-bottom: 0;
+    font-size: 3.125rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+//
+// Go Back Button
+
+.aux-go-back {
+  background-color: $gray-dark;
+}
+
+.btn-go-back {
+  padding-left: 0;
+  color: $primary;
+  background-color: transparent;
+
+  .icon-arrow {
+    transform: scaleX(-1);
+    filter: FlipH;
+  }
+}

@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { withLocalize, Translate } from 'react-localize-redux'
+import { withRouter, Link } from 'react-router-dom'
+import { Translate } from 'react-localize-redux'
 import LanguageToggle from '../components/LanguageToggle'
-// import { } from '../util/config'
+import { footerLinks } from '../util/config'
 
 
-const Footer = () => (
+const Footer = ({ match }) => (
   <footer className='footer'>
     <div className='footer-upper'>
       <div className='container'>
@@ -29,8 +30,15 @@ const Footer = () => (
         <Translate id='footer.copyright' data={{ year: new Date().getFullYear() }} />
       </p>
       <LanguageToggle />
+      <nav>
+        {footerLinks.map(linkId => (
+          <Link to={`/${match.params.lang}/${linkId}`} key={linkId}>
+            <Translate id={`footer.links.${linkId}`} />
+          </Link>
+        ))}
+      </nav>
     </div>
   </footer>
 )
 
-export default withLocalize(Footer)
+export default withRouter(Footer)

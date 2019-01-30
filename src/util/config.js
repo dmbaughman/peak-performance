@@ -492,3 +492,9 @@ export const links = {
   freiburg: 'https://www.melaleuca.com'
 }
 
+export const footerLinks = [
+  'privacy',
+  'terms',
+  'about'
+]
+
