@@ -50,7 +50,7 @@ class Quiz extends Component {
   render () {
     const { symptoms } = this.state
     return (
-      <section className='section-quiz'>
+      <section className='section-quiz' id='symptoms'>
         <VisibilitySensor onChange={this.handleVisibility}>
         <div className='quiz-inner'>
           <ol className='quiz-symptoms'>

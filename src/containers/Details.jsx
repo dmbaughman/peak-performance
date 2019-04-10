@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import { withLocalize, Translate } from 'react-localize-redux'
 import ReactJWPlayer from 'react-jw-player'
 import Modal from '../components/Modal'
@@ -33,6 +34,7 @@ class Details extends Component {
 
   render () {
     const { showVideo, showChart, videoConfig } = this.state
+    const { match } = this.props
     const detailsMoreInfo = (item) => {
       if (item.link) {
         return (
@@ -80,7 +82,7 @@ class Details extends Component {
         </div>
         {showVideo &&
           <Modal handleDismiss={this.toggleVideo}>
-            <ReactJWPlayer {...jwConfig} {...videoConfig} />
+            <ReactJWPlayer {...jwConfig} {...videoConfig} file={videoConfig.file[match.params.lang]} />
           </Modal>
         }
         {showChart &&
@@ -93,4 +95,4 @@ class Details extends Component {
   }
 }
 
-export default Details
+export default withRouter(Details)

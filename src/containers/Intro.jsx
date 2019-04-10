@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import { withLocalize, Translate } from 'react-localize-redux'
 import ReactJWPlayer from 'react-jw-player'
 import Modal from '../components/Modal'
@@ -18,6 +19,7 @@ class Intro extends Component {
 
   render () {
     const { showVideo } = this.state
+    const { match } = this.props
     return (
       <section className='section-intro' id='intro'>
         <div className='intro-container container'>
@@ -36,7 +38,7 @@ class Intro extends Component {
         </div>
         {showVideo &&
           <Modal handleDismiss={this.toggleVideo}>
-            <ReactJWPlayer {...jwConfig} {...introVideoConfig} />
+            <ReactJWPlayer {...jwConfig} {...introVideoConfig} file={introVideoConfig.file[match.params.lang]} />
           </Modal>
         }
       </section>
@@ -44,4 +46,4 @@ class Intro extends Component {
   }
 }
 
-export default Intro
+export default withRouter(Intro)

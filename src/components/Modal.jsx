@@ -27,12 +27,12 @@ class Modal extends Component {
   }
 }
 
-
-
-
-
 Modal.propTypes = {
-
+  handleDismiss: PropTypes.func,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
 }
 
 export default Modal

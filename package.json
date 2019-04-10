@@ -64,6 +64,7 @@
     "react-hot-loader": "^4.3.6",
     "react-jw-player": "^1.19.0",
     "react-localize-redux": "^3.3.2",
+    "react-router-hash-link": "^1.2.1",
     "react-visibility-sensor": "^5.0.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",

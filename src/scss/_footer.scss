@@ -41,10 +41,14 @@
 // Lower section
 //
 
+.footer-lower,
+.footer-links a {
+  font-size: $font-size-base;
+  color: $gray-light;
+}
+
 .footer-lower {
   padding: ($grid-gutter-width * 1.5) $gutter-mobile;
-  font-size: 14px;
-  color: $gray-light;
 }
 
 .footer-contact {
@@ -67,5 +71,13 @@
 }
 
 .footer-copyright {
+  margin-bottom: $grid-gutter-width;
+}
 
+.footer-links {
+  margin-top: $grid-gutter-width;
+
+  a {
+    padding: .625rem;
+  }
 }

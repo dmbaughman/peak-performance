@@ -30,13 +30,15 @@ const Footer = ({ match }) => (
         <Translate id='footer.copyright' data={{ year: new Date().getFullYear() }} />
       </p>
       <LanguageToggle />
-      <nav>
-        {footerLinks.map(linkId => (
-          <Link to={`/${match.params.lang}/${linkId}`} key={linkId}>
-            <Translate id={`footer.links.${linkId}`} />
-          </Link>
-        ))}
-      </nav>
+      {match.params.lang === 'en' &&
+        <nav className='footer-links'>
+          {footerLinks.map(linkId => (
+            <Link to={`/${match.params.lang}/${linkId}`} key={linkId}>
+              <Translate id={`footer.links.${linkId}`} />
+            </Link>
+          ))}
+        </nav>
+      }
     </div>
   </footer>
 )

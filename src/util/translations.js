@@ -46,7 +46,7 @@ export default {
         '<span class="hero-title-top">Peak</span><span class="hero-title-bottom">Performance</span>'
       ],
       energy: [
-        '<span class="hero-title-top">Más</span><span class="hero-title-bottom">Energy</span>',
+        '<span class="hero-title-top">More</span><span class="hero-title-bottom">Energy</span>',
         '<span class="hero-title-top">Más</span><span class="hero-title-bottom">energía</span>'
       ],
       health: [

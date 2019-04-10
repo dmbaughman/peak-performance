@@ -2,13 +2,13 @@
  * DEVELOPMENT CONFIG
  */
 
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const S3Plugin = require('webpack-s3-plugin');
-const AWS = require('aws-sdk');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const S3Plugin = require('webpack-s3-plugin')
+const AWS = require('aws-sdk')
 
 const PATHS = {
   SRC: path.join(__dirname, 'src'),
@@ -19,12 +19,12 @@ const PATHS = {
   CLEAN: [ 'dist' ]
 }
 
-const suffix = '';
+const suffix = '-20190401'
 
 
 module.exports = env => {
-  const mode = env.production ? 'production': 'development';
-  const isDev = mode === 'development';
+  const mode = env.production ? 'production': 'development'
+  const isDev = mode === 'development'
   const baseConfig = {
     mode: mode,
     entry: PATHS.APP,
@@ -99,7 +99,7 @@ module.exports = env => {
             })
           },
           s3UploadOptions: {
-            Bucket: 'melaleuca-cdn-source-us/content/microsites/peak-performance'
+            Bucket: 'melaleuca-cdn-source-us/production/microsites/peak-performance'
           },
           cdnizerOptions: {
             defaultCDNBase: 'https://cdnus.melaleuca.com/microsites/peak-performance'

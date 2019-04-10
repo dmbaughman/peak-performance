@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import { Translate } from 'react-localize-redux';
-import ReactJWPlayer from 'react-jw-player';
+import React, { Component } from 'react'
+import { withRouter, Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
+import { Translate } from 'react-localize-redux'
+import ReactJWPlayer from 'react-jw-player'
 
 import Icon from '../components/Icon'
 import VideoPlayer from '../components/VideoPlayer'
@@ -13,21 +15,21 @@ class Hero extends Component {
   }
 
   handleTimeUpdate = (event) => {
-    const { currentTime } = event.target;
+    const { currentTime } = event.target
     heroSlides.forEach((slide, index) => {
       if (currentTime >= slide.time && currentTime <= slide.time + .25) {
-        this.setState({active: index});
+        this.setState({active: index})
       }
     })
   }
 
   handleStepClick = (index, time) => {
-    const videoEl = document.getElementById('js-hero-video');
+    const videoEl = document.getElementById('js-hero-video')
     this.setState({
       active: index
     })
     if (videoEl) {
-      videoEl.currentTime = time;
+      videoEl.currentTime = time
     }
   }
 
@@ -54,7 +56,8 @@ class Hero extends Component {
 
 
   render () {
-    const { active } = this.state;
+    const { active } = this.state
+    const { location } = this.props
     return (
       <section className='section-hero'>
         <h2 className='hero-tagline'>
@@ -88,14 +91,14 @@ class Hero extends Component {
           })}
         </div>
         <div className='hero-scroll'>
-          <a className='hero-scroll-link' href='#intro'>
+          <HashLink className='hero-scroll-link' to='#symptoms'>
             <Translate id='ui.scroll' />
             <Icon id='arrow' />
-          </a>
+          </HashLink>
         </div>
       </section>
     )
   }
 }
 
-export default Hero;
+export default withRouter(Hero)

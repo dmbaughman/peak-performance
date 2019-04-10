@@ -68,14 +68,17 @@ export const symptoms = [
 ]
 
 export const jwConfig = {
-  playerScript: 'https://content.jwplatform.com/libraries/0FZCK9ag.js',
+  playerScript: 'https://cdn.jwplayer.com/libraries/0FZCK9ag.js',
   playerId: 'jw-player',
   isAutoPlay: true
 }
 
 export const introVideoConfig = {
   playerId: 'intro-video',
-  file: 'https://content.jwplatform.com/manifests/Nc9aCZXj.m3u8'
+  file: {
+    en: 'https://cdn.jwplayer.com/manifests/Nc9aCZXj.m3u8',
+    es: 'https://cdn.jwplayer.com/manifests/Nc9aCZXj.m3u8'
+  }
 }
 
 export const gallery = [
@@ -449,7 +452,10 @@ export const detailsItems = [
     },
     video: {
       playerId: 'oligo-video',
-      file: 'https://content.jwplatform.com/manifests/iKUyo1Mw.m3u8',
+      file: {
+        en: 'https://cdn.jwplayer.com/manifests/iKUyo1Mw.m3u8',
+        es: 'https://cdn.jwplayer.com/manifests/s4XtJKBC.m3u8'
+      },
       image: 'https://cdn.jwplayer.com/thumbs/iKUyo1Mw-720.jpg'
     }
   },
@@ -465,7 +471,10 @@ export const detailsItems = [
     },
     video: {
       playerId: 'freiburg-video',
-      file: 'https://content.jwplatform.com/manifests/3msXoVOA.m3u8',
+      file: {
+        en: 'https://cdn.jwplayer.com/manifests/3msXoVOA.m3u8',
+        es: 'https://cdn.jwplayer.com/manifests/7h8gs9wX.m3u8'
+      },
       image: 'https://cdn.jwplayer.com/thumbs/3msXoVOA-720.jpg'
     },
     link: 'http://www.freiburgstudy.com'
